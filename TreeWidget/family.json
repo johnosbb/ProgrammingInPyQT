@@ -1,0 +1,16 @@
+{
+    "mainMenu": {
+        "Child1": {
+            "grandChild11": "None",
+            "grandChild12": "None"
+        },
+        "Child2": {
+            "grandChild21": "None",
+            "grandChild22": "None"
+        },
+        "Child3": {
+            "grandChild31": "xx",
+            "grandChild32": "xy"
+        }
+    }
+}

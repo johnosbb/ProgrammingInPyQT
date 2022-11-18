@@ -1,0 +1,4005 @@
+{
+    "query": "sky",
+    "terms": [
+        {
+            "word": "cloudless",
+            "score": 7333
+        },
+        {
+            "word": "clear blue",
+            "score": 2355
+        },
+        {
+            "word": "deep blue",
+            "score": 1373
+        },
+        {
+            "word": "cloudless blue",
+            "score": 584
+        },
+        {
+            "word": "blue, blue",
+            "score": 248
+        },
+        {
+            "word": "hard blue",
+            "score": 202
+        },
+        {
+            "word": "clear, blue",
+            "score": 159
+        },
+        {
+            "word": "pure blue",
+            "score": 155
+        },
+        {
+            "word": "cloud-flecked",
+            "score": 116
+        },
+        {
+            "word": "almost cloudless",
+            "score": 108
+        },
+        {
+            "word": "blue, cloudless",
+            "score": 108
+        },
+        {
+            "word": "blue and cloudless",
+            "score": 90
+        },
+        {
+            "word": "intensely blue",
+            "score": 83
+        },
+        {
+            "word": "clear, cloudless",
+            "score": 77
+        },
+        {
+            "word": "empty blue",
+            "score": 74
+        },
+        {
+            "word": "blue italian",
+            "score": 70
+        },
+        {
+            "word": "blue cloudless",
+            "score": 69
+        },
+        {
+            "word": "blue ethereal",
+            "score": 67
+        },
+        {
+            "word": "yon rich",
+            "score": 62
+        },
+        {
+            "word": "fair blue",
+            "score": 58
+        },
+        {
+            "word": "clear and cloudless",
+            "score": 52
+        },
+        {
+            "word": "serene blue",
+            "score": 46
+        },
+        {
+            "word": "flawless blue",
+            "score": 45
+        },
+        {
+            "word": "brilliantly blue",
+            "score": 42
+        },
+        {
+            "word": "sunny blue",
+            "score": 40
+        },
+        {
+            "word": "clear azure",
+            "score": 39
+        },
+        {
+            "word": "cloudless azure",
+            "score": 33
+        },
+        {
+            "word": "clear blue-green",
+            "score": 32
+        },
+        {
+            "word": "black lunar",
+            "score": 31
+        },
+        {
+            "word": "gray wintry",
+            "score": 30
+        },
+        {
+            "word": "perfectly cloudless",
+            "score": 27
+        },
+        {
+            "word": "red western",
+            "score": 27
+        },
+        {
+            "word": "blue egyptian",
+            "score": 25
+        },
+        {
+            "word": "nearly cloudless",
+            "score": 25
+        },
+        {
+            "word": "blue southern",
+            "score": 25
+        },
+        {
+            "word": "glaring blue",
+            "score": 25
+        },
+        {
+            "word": "bright and cloudless",
+            "score": 24
+        },
+        {
+            "word": "painfully blue",
+            "score": 23
+        },
+        {
+            "word": "gray, stormy",
+            "score": 23
+        },
+        {
+            "word": "blue tropical",
+            "score": 23
+        },
+        {
+            "word": "unknown outer",
+            "score": 22
+        },
+        {
+            "word": "clear cloudless",
+            "score": 22
+        },
+        {
+            "word": "impossibly blue",
+            "score": 22
+        },
+        {
+            "word": "cloudless northern",
+            "score": 21
+        },
+        {
+            "word": "cloudless eastern",
+            "score": 21
+        },
+        {
+            "word": "rare clear",
+            "score": 21
+        },
+        {
+            "word": "blue african",
+            "score": 20
+        },
+        {
+            "word": "gray eastern",
+            "score": 20
+        },
+        {
+            "word": "still cloudless",
+            "score": 19
+        },
+        {
+            "word": "dark azure",
+            "score": 19
+        },
+        {
+            "word": "vast ethereal",
+            "score": 19
+        },
+        {
+            "word": "pure, blue",
+            "score": 19
+        },
+        {
+            "word": "cloudless western",
+            "score": 18
+        },
+        {
+            "word": "clear eastern",
+            "score": 18
+        },
+        {
+            "word": "now cloudless",
+            "score": 18
+        },
+        {
+            "word": "fiery western",
+            "score": 17
+        },
+        {
+            "word": "blue moonlit",
+            "score": 17
+        },
+        {
+            "word": "same cloudless",
+            "score": 17
+        },
+        {
+            "word": "empty hazy",
+            "score": 16
+        },
+        {
+            "word": "leaden misty",
+            "score": 16
+        },
+        {
+            "word": "blue and gentle",
+            "score": 16
+        },
+        {
+            "word": "grey, cloudy",
+            "score": 16
+        },
+        {
+            "word": "gray, leaden",
+            "score": 16
+        },
+        {
+            "word": "deeply blue",
+            "score": 16
+        },
+        {
+            "word": "blue wintry",
+            "score": 15
+        },
+        {
+            "word": "black pre-dawn",
+            "score": 15
+        },
+        {
+            "word": "dreadful empty",
+            "score": 15
+        },
+        {
+            "word": "barren blue",
+            "score": 15
+        },
+        {
+            "word": "boundless azure",
+            "score": 15
+        },
+        {
+            "word": "unbroken blue",
+            "score": 15
+        },
+        {
+            "word": "low, leaden",
+            "score": 15
+        },
+        {
+            "word": "blue northern",
+            "score": 15
+        },
+        {
+            "word": "identifiably different",
+            "score": 14
+        },
+        {
+            "word": "gray rhenish",
+            "score": 14
+        },
+        {
+            "word": "strangely stippled",
+            "score": 14
+        },
+        {
+            "word": "ever blue",
+            "score": 14
+        },
+        {
+            "word": "blue sunny",
+            "score": 14
+        },
+        {
+            "word": "flat, blue",
+            "score": 14
+        },
+        {
+            "word": "dark blank",
+            "score": 14
+        },
+        {
+            "word": "incredibly blue",
+            "score": 14
+        },
+        {
+            "word": "dramatically cloudy",
+            "score": 13
+        },
+        {
+            "word": "almost night-time",
+            "score": 13
+        },
+        {
+            "word": "luminously blue",
+            "score": 13
+        },
+        {
+            "word": "high cloudy",
+            "score": 13
+        },
+        {
+            "word": "pale western",
+            "score": 13
+        },
+        {
+            "word": "hot cloudless",
+            "score": 13
+        },
+        {
+            "word": "absolutely cloudless",
+            "score": 13
+        },
+        {
+            "word": "startlingly blue",
+            "score": 13
+        },
+        {
+            "word": "cool western",
+            "score": 13
+        },
+        {
+            "word": "uncaring, gray",
+            "score": 12
+        },
+        {
+            "word": "pale, cloudless",
+            "score": 12
+        },
+        {
+            "word": "blue etherial",
+            "score": 12
+        },
+        {
+            "word": "cloud-flecked blue",
+            "score": 12
+        },
+        {
+            "word": "blindingly blue",
+            "score": 12
+        },
+        {
+            "word": "bright western",
+            "score": 12
+        },
+        {
+            "word": "bright cloudless",
+            "score": 12
+        },
+        {
+            "word": "clear autumnal",
+            "score": 12
+        },
+        {
+            "word": "dismal dark",
+            "score": 12
+        },
+        {
+            "word": "clear serene",
+            "score": 12
+        },
+        {
+            "word": "grey wintry",
+            "score": 12
+        },
+        {
+            "word": "awesome purple",
+            "score": 11
+        },
+        {
+            "word": "pale rainy",
+            "score": 11
+        },
+        {
+            "word": "unclouded blue",
+            "score": 11
+        },
+        {
+            "word": "stormy and cloudy",
+            "score": 11
+        },
+        {
+            "word": "bright misty",
+            "score": 11
+        },
+        {
+            "word": "cloudless, windless",
+            "score": 11
+        },
+        {
+            "word": "blue, watery",
+            "score": 11
+        },
+        {
+            "word": "pale eastern",
+            "score": 11
+        },
+        {
+            "word": "yon boundless",
+            "score": 11
+        },
+        {
+            "word": "windy blue",
+            "score": 11
+        },
+        {
+            "word": "blissful blue",
+            "score": 10
+        },
+        {
+            "word": "mostly cloudless",
+            "score": 10
+        },
+        {
+            "word": "green early-morning",
+            "score": 10
+        },
+        {
+            "word": "lofty infinite",
+            "score": 10
+        },
+        {
+            "word": "cloudless, blue",
+            "score": 10
+        },
+        {
+            "word": "white and featureless",
+            "score": 10
+        },
+        {
+            "word": "grey cloudy",
+            "score": 10
+        },
+        {
+            "word": "clear, windy",
+            "score": 10
+        },
+        {
+            "word": "quite blue",
+            "score": 10
+        },
+        {
+            "word": "rosy western",
+            "score": 10
+        },
+        {
+            "word": "hitherto cloudless",
+            "score": 10
+        },
+        {
+            "word": "arched blue",
+            "score": 10
+        },
+        {
+            "word": "otherwise cloudless",
+            "score": 10
+        },
+        {
+            "word": "sunny, cloudless",
+            "score": 10
+        },
+        {
+            "word": "otherwise blue",
+            "score": 10
+        },
+        {
+            "word": "false blue",
+            "score": 10
+        },
+        {
+            "word": "low leaden",
+            "score": 10
+        },
+        {
+            "word": "changeable and heavy",
+            "score": 9
+        },
+        {
+            "word": "blue and somber",
+            "score": 9
+        },
+        {
+            "word": "flawless, azure",
+            "score": 9
+        },
+        {
+            "word": "silent, nighttime",
+            "score": 9
+        },
+        {
+            "word": "sunny late-afternoon",
+            "score": 9
+        },
+        {
+            "word": "crazily stippled",
+            "score": 9
+        },
+        {
+            "word": "clear refractive",
+            "score": 9
+        },
+        {
+            "word": "bright and nasty",
+            "score": 9
+        },
+        {
+            "word": "deepest and clearest",
+            "score": 9
+        },
+        {
+            "word": "dark and cloudless",
+            "score": 9
+        },
+        {
+            "word": "clear, azure",
+            "score": 9
+        },
+        {
+            "word": "sun-drenched blue",
+            "score": 9
+        },
+        {
+            "word": "metallic turquoise",
+            "score": 9
+        },
+        {
+            "word": "blue, open",
+            "score": 9
+        },
+        {
+            "word": "welcome blue",
+            "score": 9
+        },
+        {
+            "word": "empty pink",
+            "score": 9
+        },
+        {
+            "word": "grey heavy",
+            "score": 9
+        },
+        {
+            "word": "red eastern",
+            "score": 9
+        },
+        {
+            "word": "black eastern",
+            "score": 9
+        },
+        {
+            "word": "clear southern",
+            "score": 9
+        },
+        {
+            "word": "cloudless pale",
+            "score": 8
+        },
+        {
+            "word": "clear southeastern",
+            "score": 8
+        },
+        {
+            "word": "milky cloudy",
+            "score": 8
+        },
+        {
+            "word": "leaden northern",
+            "score": 8
+        },
+        {
+            "word": "green and stormy",
+            "score": 8
+        },
+        {
+            "word": "steely distant",
+            "score": 8
+        },
+        {
+            "word": "dim, impersonal",
+            "score": 8
+        },
+        {
+            "word": "desolate and leaden",
+            "score": 8
+        },
+        {
+            "word": "vast cloudless",
+            "score": 8
+        },
+        {
+            "word": "crimson western",
+            "score": 8
+        },
+        {
+            "word": "hot gunmetal",
+            "score": 8
+        },
+        {
+            "word": "clear, upper",
+            "score": 8
+        },
+        {
+            "word": "flaming western",
+            "score": 8
+        },
+        {
+            "word": "brassy blue",
+            "score": 8
+        },
+        {
+            "word": "rocket-powered",
+            "score": 8
+        },
+        {
+            "word": "pale but brilliant",
+            "score": 8
+        },
+        {
+            "word": "softer southern",
+            "score": 8
+        },
+        {
+            "word": "achingly blue",
+            "score": 8
+        },
+        {
+            "word": "blue syrian",
+            "score": 8
+        },
+        {
+            "word": "frightful gray",
+            "score": 8
+        },
+        {
+            "word": "bright hazy",
+            "score": 8
+        },
+        {
+            "word": "beautifully blue",
+            "score": 8
+        },
+        {
+            "word": "dappled blue",
+            "score": 8
+        },
+        {
+            "word": "breezy blue",
+            "score": 8
+        },
+        {
+            "word": "blue eastern",
+            "score": 8
+        },
+        {
+            "word": "pale, unimpressive",
+            "score": 7
+        },
+        {
+            "word": "dazzling, empty",
+            "score": 7
+        },
+        {
+            "word": "blue-green bolivian",
+            "score": 7
+        },
+        {
+            "word": "empty, late-afternoon",
+            "score": 7
+        },
+        {
+            "word": "stubbornly stormy",
+            "score": 7
+        },
+        {
+            "word": "natural amber",
+            "score": 7
+        },
+        {
+            "word": "otherwise cheerful and brilliant",
+            "score": 7
+        },
+        {
+            "word": "densely blue",
+            "score": 7
+        },
+        {
+            "word": "ineffably blue and distant",
+            "score": 7
+        },
+        {
+            "word": "ineffably blue",
+            "score": 7
+        },
+        {
+            "word": "deeply limpid",
+            "score": 7
+        },
+        {
+            "word": "eternal, pompous",
+            "score": 7
+        },
+        {
+            "word": "cloudy, coppery",
+            "score": 7
+        },
+        {
+            "word": "infinite open",
+            "score": 7
+        },
+        {
+            "word": "dull lavender",
+            "score": 7
+        },
+        {
+            "word": "empty blue-green",
+            "score": 7
+        },
+        {
+            "word": "endlessly distant",
+            "score": 7
+        },
+        {
+            "word": "mute, passive",
+            "score": 7
+        },
+        {
+            "word": "healthy blue",
+            "score": 7
+        },
+        {
+            "word": "cruel, cloudless",
+            "score": 7
+        },
+        {
+            "word": "utterly blue",
+            "score": 7
+        },
+        {
+            "word": "strangely blue",
+            "score": 7
+        },
+        {
+            "word": "brilliant cloudless",
+            "score": 7
+        },
+        {
+            "word": "blustery gray",
+            "score": 7
+        },
+        {
+            "word": "pure and empty",
+            "score": 7
+        },
+        {
+            "word": "blue himalayan",
+            "score": 7
+        },
+        {
+            "word": "leaden, sullen",
+            "score": 7
+        },
+        {
+            "word": "horrid open",
+            "score": 7
+        },
+        {
+            "word": "uniformly gray",
+            "score": 7
+        },
+        {
+            "word": "mostly cloudy",
+            "score": 7
+        },
+        {
+            "word": "cheerful and brilliant",
+            "score": 7
+        },
+        {
+            "word": "hot lower",
+            "score": 7
+        },
+        {
+            "word": "blue, ethereal",
+            "score": 7
+        },
+        {
+            "word": "vast, opulent",
+            "score": 7
+        },
+        {
+            "word": "cold, cloudless",
+            "score": 7
+        },
+        {
+            "word": "endless blue-green",
+            "score": 7
+        },
+        {
+            "word": "blue autumnal",
+            "score": 7
+        },
+        {
+            "word": "calm azure",
+            "score": 7
+        },
+        {
+            "word": "uncharacteristically clear",
+            "score": 6
+        },
+        {
+            "word": "unchangeably blue",
+            "score": 6
+        },
+        {
+            "word": "gray, smoke-filled",
+            "score": 6
+        },
+        {
+            "word": "perfect cloudless",
+            "score": 6
+        },
+        {
+            "word": "beautiful fiber-optic",
+            "score": 6
+        },
+        {
+            "word": "blessedly cloudless",
+            "score": 6
+        },
+        {
+            "word": "bornly stormy",
+            "score": 6
+        },
+        {
+            "word": "unchanging, barren",
+            "score": 6
+        },
+        {
+            "word": "now egotistical",
+            "score": 6
+        },
+        {
+            "word": "serene, golden",
+            "score": 6
+        },
+        {
+            "word": "hopeless gray",
+            "score": 6
+        },
+        {
+            "word": "lighter eastern",
+            "score": 6
+        },
+        {
+            "word": "vague lower",
+            "score": 6
+        },
+        {
+            "word": "gray-blue, cloudless",
+            "score": 6
+        },
+        {
+            "word": "practically cloudless",
+            "score": 6
+        },
+        {
+            "word": "mid aerial",
+            "score": 6
+        },
+        {
+            "word": "cloudless and clear",
+            "score": 6
+        },
+        {
+            "word": "purple, moonlit",
+            "score": 6
+        },
+        {
+            "word": "rainless, cloudless",
+            "score": 6
+        },
+        {
+            "word": "bluish, milky",
+            "score": 6
+        },
+        {
+            "word": "cloudy or tenebrous",
+            "score": 6
+        },
+        {
+            "word": "white uncaring",
+            "score": 6
+        },
+        {
+            "word": "vast, spotless",
+            "score": 6
+        },
+        {
+            "word": "gloomy, boundless",
+            "score": 6
+        },
+        {
+            "word": "upper or lateral",
+            "score": 6
+        },
+        {
+            "word": "clear, bare",
+            "score": 6
+        },
+        {
+            "word": "vast, cloudless",
+            "score": 6
+        },
+        {
+            "word": "indifferent blue",
+            "score": 6
+        },
+        {
+            "word": "thick, disordered",
+            "score": 6
+        },
+        {
+            "word": "black frosty",
+            "score": 6
+        },
+        {
+            "word": "mild azure",
+            "score": 6
+        },
+        {
+            "word": "perfectly clear and cloudless",
+            "score": 6
+        },
+        {
+            "word": "low and cloudy",
+            "score": 6
+        },
+        {
+            "word": "high, cloudless",
+            "score": 6
+        },
+        {
+            "word": "remote and pallid",
+            "score": 6
+        },
+        {
+            "word": "blue, wintry",
+            "score": 6
+        },
+        {
+            "word": "luminous gray-blue",
+            "score": 6
+        },
+        {
+            "word": "humid gray",
+            "score": 6
+        },
+        {
+            "word": "splendidly serene",
+            "score": 6
+        },
+        {
+            "word": "pale nocturnal",
+            "score": 6
+        },
+        {
+            "word": "brilliant, empty",
+            "score": 6
+        },
+        {
+            "word": "golden and deep",
+            "score": 6
+        },
+        {
+            "word": "blue tranquil",
+            "score": 6
+        },
+        {
+            "word": "grey pre-dawn",
+            "score": 6
+        },
+        {
+            "word": "clearest blue",
+            "score": 6
+        },
+        {
+            "word": "grand stormy",
+            "score": 6
+        },
+        {
+            "word": "whole misty",
+            "score": 6
+        },
+        {
+            "word": "italian blue",
+            "score": 6
+        },
+        {
+            "word": "grey western",
+            "score": 6
+        },
+        {
+            "word": "blue, pure",
+            "score": 6
+        },
+        {
+            "word": "dark ashen",
+            "score": 6
+        },
+        {
+            "word": "eternally blue",
+            "score": 6
+        },
+        {
+            "word": "still clear and bright",
+            "score": 6
+        },
+        {
+            "word": "blue, empty",
+            "score": 6
+        },
+        {
+            "word": "brilliant western",
+            "score": 6
+        },
+        {
+            "word": "largely cloudy",
+            "score": 5
+        },
+        {
+            "word": "faceless ashen",
+            "score": 5
+        },
+        {
+            "word": "darkly livid",
+            "score": 5
+        },
+        {
+            "word": "brazen cloudless",
+            "score": 5
+        },
+        {
+            "word": "alien greenish",
+            "score": 5
+        },
+        {
+            "word": "common and vast",
+            "score": 5
+        },
+        {
+            "word": "high, blue-black",
+            "score": 5
+        },
+        {
+            "word": "southern moonlit",
+            "score": 5
+        },
+        {
+            "word": "brutally blue",
+            "score": 5
+        },
+        {
+            "word": "glorious, unbounded",
+            "score": 5
+        },
+        {
+            "word": "infinitely azure",
+            "score": 5
+        },
+        {
+            "word": "permanently cloudy",
+            "score": 5
+        },
+        {
+            "word": "blue daytime",
+            "score": 5
+        },
+        {
+            "word": "white, rainy",
+            "score": 5
+        },
+        {
+            "word": "savage gunmetal",
+            "score": 5
+        },
+        {
+            "word": "black northwestern",
+            "score": 5
+        },
+        {
+            "word": "black predawn",
+            "score": 5
+        },
+        {
+            "word": "clean, blue-green",
+            "score": 5
+        },
+        {
+            "word": "cloudless late-afternoon",
+            "score": 5
+        },
+        {
+            "word": "also bright and clear",
+            "score": 5
+        },
+        {
+            "word": "black, textured",
+            "score": 5
+        },
+        {
+            "word": "eternally grey",
+            "score": 5
+        },
+        {
+            "word": "bleached and sullen",
+            "score": 5
+        },
+        {
+            "word": "gray but rainless",
+            "score": 5
+        },
+        {
+            "word": "still temperate and clear",
+            "score": 5
+        },
+        {
+            "word": "still temperate",
+            "score": 5
+        },
+        {
+            "word": "blue cloud-flecked",
+            "score": 5
+        },
+        {
+            "word": "cloudless amber",
+            "score": 5
+        },
+        {
+            "word": "distant grecian",
+            "score": 5
+        },
+        {
+            "word": "deep unclouded",
+            "score": 5
+        },
+        {
+            "word": "leaden eastern",
+            "score": 5
+        },
+        {
+            "word": "thy cloudless",
+            "score": 5
+        },
+        {
+            "word": "limpid italian",
+            "score": 5
+        },
+        {
+            "word": "blue exhilarating",
+            "score": 5
+        },
+        {
+            "word": "dark laden",
+            "score": 5
+        },
+        {
+            "word": "real cloudy",
+            "score": 5
+        },
+        {
+            "word": "alternately dark and bright",
+            "score": 5
+        },
+        {
+            "word": "soft, cloudless",
+            "score": 5
+        },
+        {
+            "word": "pitiless, brazen",
+            "score": 5
+        },
+        {
+            "word": "true, open",
+            "score": 5
+        },
+        {
+            "word": "dreary featureless",
+            "score": 5
+        },
+        {
+            "word": "fractionally lighter",
+            "score": 5
+        },
+        {
+            "word": "familiar gray-blue",
+            "score": 5
+        },
+        {
+            "word": "perpetually clear",
+            "score": 5
+        },
+        {
+            "word": "warm endless",
+            "score": 5
+        },
+        {
+            "word": "damp gray",
+            "score": 5
+        },
+        {
+            "word": "silent heavy",
+            "score": 5
+        },
+        {
+            "word": "high, everlasting",
+            "score": 5
+        },
+        {
+            "word": "hazy amber",
+            "score": 5
+        },
+        {
+            "word": "sinless, peaceful",
+            "score": 5
+        },
+        {
+            "word": "pallid eastern",
+            "score": 5
+        },
+        {
+            "word": "yon southern",
+            "score": 5
+        },
+        {
+            "word": "verdant or blue",
+            "score": 5
+        },
+        {
+            "word": "serene and temperate",
+            "score": 5
+        },
+        {
+            "word": "alternately dark",
+            "score": 5
+        },
+        {
+            "word": "strange strange",
+            "score": 5
+        },
+        {
+            "word": "gray, snowy",
+            "score": 5
+        },
+        {
+            "word": "placid azure",
+            "score": 5
+        },
+        {
+            "word": "totally opaque",
+            "score": 5
+        },
+        {
+            "word": "grey and cloudy",
+            "score": 5
+        },
+        {
+            "word": "black and tempestuous",
+            "score": 5
+        },
+        {
+            "word": "newly red",
+            "score": 5
+        },
+        {
+            "word": "suddenly cloudy",
+            "score": 5
+        },
+        {
+            "word": "dark but clear",
+            "score": 5
+        },
+        {
+            "word": "bleak arctic",
+            "score": 5
+        },
+        {
+            "word": "gray western",
+            "score": 5
+        },
+        {
+            "word": "soft gray-blue",
+            "score": 5
+        },
+        {
+            "word": "gorgeous western",
+            "score": 5
+        },
+        {
+            "word": "yon pallid",
+            "score": 5
+        },
+        {
+            "word": "intensely dark-blue",
+            "score": 4
+        },
+        {
+            "word": "heartlessly bright",
+            "score": 4
+        },
+        {
+            "word": "blue, cloud-flecked",
+            "score": 4
+        },
+        {
+            "word": "porous leaden",
+            "score": 4
+        },
+        {
+            "word": "completely cloudless",
+            "score": 4
+        },
+        {
+            "word": "unbearably blue",
+            "score": 4
+        },
+        {
+            "word": "dark muggy",
+            "score": 4
+        },
+        {
+            "word": "blissfully blue",
+            "score": 4
+        },
+        {
+            "word": "heavy cloudy",
+            "score": 4
+        },
+        {
+            "word": "blue unblemished",
+            "score": 4
+        },
+        {
+            "word": "stormy and magnificent",
+            "score": 4
+        },
+        {
+            "word": "fantastic, cloud-flecked",
+            "score": 4
+        },
+        {
+            "word": "fearsome open",
+            "score": 4
+        },
+        {
+            "word": "cold, greenish",
+            "score": 4
+        },
+        {
+            "word": "empty and lucid",
+            "score": 4
+        },
+        {
+            "word": "harsh, unconcerned",
+            "score": 4
+        },
+        {
+            "word": "pink, empty",
+            "score": 4
+        },
+        {
+            "word": "colorless, limpid",
+            "score": 4
+        },
+        {
+            "word": "heavy, nighttime",
+            "score": 4
+        },
+        {
+            "word": "muggy grey",
+            "score": 4
+        },
+        {
+            "word": "longer blue",
+            "score": 4
+        },
+        {
+            "word": "murky western",
+            "score": 4
+        },
+        {
+            "word": "perennially blue",
+            "score": 4
+        },
+        {
+            "word": "pale and strangely lurid",
+            "score": 4
+        },
+        {
+            "word": "strangely lurid",
+            "score": 4
+        },
+        {
+            "word": "eerie blue-black",
+            "score": 4
+        },
+        {
+            "word": "illusory black",
+            "score": 4
+        },
+        {
+            "word": "wide, cloudless",
+            "score": 4
+        },
+        {
+            "word": "luminous, hollow",
+            "score": 4
+        },
+        {
+            "word": "late-afternoon gray",
+            "score": 4
+        },
+        {
+            "word": "deep ultraviolet",
+            "score": 4
+        },
+        {
+            "word": "dusky turquoise",
+            "score": 4
+        },
+        {
+            "word": "softly moonlit",
+            "score": 4
+        },
+        {
+            "word": "daytime blue",
+            "score": 4
+        },
+        {
+            "word": "mind-numbing curved",
+            "score": 4
+        },
+        {
+            "word": "cloudless empty",
+            "score": 4
+        },
+        {
+            "word": "black or almost black",
+            "score": 4
+        },
+        {
+            "word": "green martial",
+            "score": 4
+        },
+        {
+            "word": "colored eastern",
+            "score": 4
+        },
+        {
+            "word": "serene unclouded",
+            "score": 4
+        },
+        {
+            "word": "sultry, yellow",
+            "score": 4
+        },
+        {
+            "word": "placid, azure",
+            "score": 4
+        },
+        {
+            "word": "pure ample",
+            "score": 4
+        },
+        {
+            "word": "tranquil temperate",
+            "score": 4
+        },
+        {
+            "word": "pearly eastern",
+            "score": 4
+        },
+        {
+            "word": "visible azure",
+            "score": 4
+        },
+        {
+            "word": "everlasting azure",
+            "score": 4
+        },
+        {
+            "word": "perfectly genuine and untouched",
+            "score": 4
+        },
+        {
+            "word": "lighter western",
+            "score": 4
+        },
+        {
+            "word": "cloudless, turquoise",
+            "score": 4
+        },
+        {
+            "word": "grey, windless",
+            "score": 4
+        },
+        {
+            "word": "rainy golden",
+            "score": 4
+        },
+        {
+            "word": "scarcely luminous",
+            "score": 4
+        },
+        {
+            "word": "blackest blue",
+            "score": 4
+        },
+        {
+            "word": "still cloudy and heavy",
+            "score": 4
+        },
+        {
+            "word": "cloudless, moonlit",
+            "score": 4
+        },
+        {
+            "word": "evenly white",
+            "score": 4
+        },
+        {
+            "word": "apparently unclouded",
+            "score": 4
+        },
+        {
+            "word": "entirely cloudless",
+            "score": 4
+        },
+        {
+            "word": "crystalline, radiant",
+            "score": 4
+        },
+        {
+            "word": "stormy nocturnal",
+            "score": 4
+        },
+        {
+            "word": "clear, diaphanous",
+            "score": 4
+        },
+        {
+            "word": "glad, blue",
+            "score": 4
+        },
+        {
+            "word": "far-off opal",
+            "score": 4
+        },
+        {
+            "word": "thrilling, blue",
+            "score": 4
+        },
+        {
+            "word": "clear and jewelled",
+            "score": 4
+        },
+        {
+            "word": "airless, sullen",
+            "score": 4
+        },
+        {
+            "word": "usually cloudless",
+            "score": 4
+        },
+        {
+            "word": "gray, impassable",
+            "score": 4
+        },
+        {
+            "word": "pale-blue autumnal",
+            "score": 4
+        },
+        {
+            "word": "infinitely blue",
+            "score": 4
+        },
+        {
+            "word": "impenetrable, infinite",
+            "score": 4
+        },
+        {
+            "word": "hard, brassy",
+            "score": 4
+        },
+        {
+            "word": "baleful purple",
+            "score": 4
+        },
+        {
+            "word": "windless hot",
+            "score": 4
+        },
+        {
+            "word": "dreary leaden",
+            "score": 4
+        },
+        {
+            "word": "nearly faultless",
+            "score": 4
+        },
+        {
+            "word": "stainless blue",
+            "score": 4
+        },
+        {
+            "word": "green and dusty",
+            "score": 4
+        },
+        {
+            "word": "empty, impersonal",
+            "score": 4
+        },
+        {
+            "word": "strictly spherical",
+            "score": 4
+        },
+        {
+            "word": "mid aereal",
+            "score": 4
+        },
+        {
+            "word": "pale cloudless",
+            "score": 4
+        },
+        {
+            "word": "suddenly lethal",
+            "score": 4
+        },
+        {
+            "word": "sickly yellow-gray",
+            "score": 4
+        },
+        {
+            "word": "late azure",
+            "score": 4
+        },
+        {
+            "word": "blue and empty",
+            "score": 4
+        },
+        {
+            "word": "constantly clear",
+            "score": 4
+        },
+        {
+            "word": "blue limpid",
+            "score": 4
+        },
+        {
+            "word": "luminous western",
+            "score": 4
+        },
+        {
+            "word": "serene and azure",
+            "score": 4
+        },
+        {
+            "word": "yon liquid",
+            "score": 4
+        },
+        {
+            "word": "genuine and untouched",
+            "score": 4
+        },
+        {
+            "word": "rosy gray",
+            "score": 4
+        },
+        {
+            "word": "overhead blue",
+            "score": 4
+        },
+        {
+            "word": "lurid western",
+            "score": 4
+        },
+        {
+            "word": "wild east",
+            "score": 4
+        },
+        {
+            "word": "infinite grey",
+            "score": 4
+        },
+        {
+            "word": "azure italian",
+            "score": 4
+        },
+        {
+            "word": "blue tibetan",
+            "score": 4
+        },
+        {
+            "word": "weird solitary",
+            "score": 4
+        },
+        {
+            "word": "fiery and angry",
+            "score": 4
+        },
+        {
+            "word": "thirsty southern",
+            "score": 4
+        },
+        {
+            "word": "suave blue",
+            "score": 4
+        },
+        {
+            "word": "darkly lurid",
+            "score": 4
+        },
+        {
+            "word": "bleached and empty",
+            "score": 3
+        },
+        {
+            "word": "flawlessly blue",
+            "score": 3
+        },
+        {
+            "word": "calm pastel",
+            "score": 3
+        },
+        {
+            "word": "hazy azure",
+            "score": 3
+        },
+        {
+            "word": "tall, washed-out",
+            "score": 3
+        },
+        {
+            "word": "damnably irregular",
+            "score": 3
+        },
+        {
+            "word": "perfect, blue",
+            "score": 3
+        },
+        {
+            "word": "fortunately dim and gray",
+            "score": 3
+        },
+        {
+            "word": "fortunately dim",
+            "score": 3
+        },
+        {
+            "word": "gray, directionless",
+            "score": 3
+        },
+        {
+            "word": "blue, ceramic",
+            "score": 3
+        },
+        {
+            "word": "brilliant, endless",
+            "score": 3
+        },
+        {
+            "word": "merciless unclouded",
+            "score": 3
+        },
+        {
+            "word": "vast, boisterous",
+            "score": 3
+        },
+        {
+            "word": "milky bloody",
+            "score": 3
+        },
+        {
+            "word": "still black and empty",
+            "score": 3
+        },
+        {
+            "word": "cloudless, hazy",
+            "score": 3
+        },
+        {
+            "word": "bluish dark",
+            "score": 3
+        },
+        {
+            "word": "treacherously clear",
+            "score": 3
+        },
+        {
+            "word": "peaceful and sparkling",
+            "score": 3
+        },
+        {
+            "word": "grey early-morning",
+            "score": 3
+        },
+        {
+            "word": "hazy, cloudless",
+            "score": 3
+        },
+        {
+            "word": "still harsh and black",
+            "score": 3
+        },
+        {
+            "word": "hazy dull",
+            "score": 3
+        },
+        {
+            "word": "ently cloudless",
+            "score": 3
+        },
+        {
+            "word": "mauve, early-morning",
+            "score": 3
+        },
+        {
+            "word": "unambiguously blue",
+            "score": 3
+        },
+        {
+            "word": "unseasonally grey",
+            "score": 3
+        },
+        {
+            "word": "resultant blue",
+            "score": 3
+        },
+        {
+            "word": "longer amicable",
+            "score": 3
+        },
+        {
+            "word": "perfect, unchanging",
+            "score": 3
+        },
+        {
+            "word": "serendipitously blue",
+            "score": 3
+        },
+        {
+            "word": "dully crimson",
+            "score": 3
+        },
+        {
+            "word": "intensely turquoise",
+            "score": 3
+        },
+        {
+            "word": "pale-blue wintry",
+            "score": 3
+        },
+        {
+            "word": "blank, cloudless",
+            "score": 3
+        },
+        {
+            "word": "still cloudless and blue",
+            "score": 3
+        },
+        {
+            "word": "untamed blue",
+            "score": 3
+        },
+        {
+            "word": "still dark and heavy",
+            "score": 3
+        },
+        {
+            "word": "rather lavender",
+            "score": 3
+        },
+        {
+            "word": "pure eastern",
+            "score": 3
+        },
+        {
+            "word": "persistently leaden",
+            "score": 3
+        },
+        {
+            "word": "awesomely deep and blue",
+            "score": 3
+        },
+        {
+            "word": "radiantly blue",
+            "score": 3
+        },
+        {
+            "word": "cloudless grecian",
+            "score": 3
+        },
+        {
+            "word": "obversical",
+            "score": 3
+        },
+        {
+            "word": "bright obversical",
+            "score": 3
+        },
+        {
+            "word": "irritatingly chirpy",
+            "score": 3
+        },
+        {
+            "word": "cloudless nighttime",
+            "score": 3
+        },
+        {
+            "word": "changeable and often fantastic",
+            "score": 3
+        },
+        {
+            "word": "smoke-filled, lurid",
+            "score": 3
+        },
+        {
+            "word": "sinister coppery",
+            "score": 3
+        },
+        {
+            "word": "radiant scarlet",
+            "score": 3
+        },
+        {
+            "word": "yellow rich",
+            "score": 3
+        },
+        {
+            "word": "seen--only lavender",
+            "score": 3
+        },
+        {
+            "word": "cloudless, blue-green",
+            "score": 3
+        },
+        {
+            "word": "lavender-metal",
+            "score": 3
+        },
+        {
+            "word": "east, gray",
+            "score": 3
+        },
+        {
+            "word": "infinite, awful",
+            "score": 3
+        },
+        {
+            "word": "arid blue",
+            "score": 3
+        },
+        {
+            "word": "dim steel-gray",
+            "score": 3
+        },
+        {
+            "word": "stormily flaming",
+            "score": 3
+        },
+        {
+            "word": "quite blue and cloudless",
+            "score": 3
+        },
+        {
+            "word": "soft and azure",
+            "score": 3
+        },
+        {
+            "word": "drab empty",
+            "score": 3
+        },
+        {
+            "word": "blue, dusky",
+            "score": 3
+        },
+        {
+            "word": "cloudy, black",
+            "score": 3
+        },
+        {
+            "word": "dark cloudless",
+            "score": 3
+        },
+        {
+            "word": "serene and windless",
+            "score": 3
+        },
+        {
+            "word": "blue over-arching",
+            "score": 3
+        },
+        {
+            "word": "tranquil, azure",
+            "score": 3
+        },
+        {
+            "word": "mercilessly blue",
+            "score": 3
+        },
+        {
+            "word": "algerian blue",
+            "score": 3
+        },
+        {
+            "word": "bleak, sombre",
+            "score": 3
+        },
+        {
+            "word": "opaque, uncertain",
+            "score": 3
+        },
+        {
+            "word": "often impossible and objectionable",
+            "score": 3
+        },
+        {
+            "word": "black, lurid",
+            "score": 3
+        },
+        {
+            "word": "purely azure",
+            "score": 3
+        },
+        {
+            "word": "blue ineffable",
+            "score": 3
+        },
+        {
+            "word": "luminous over-arching",
+            "score": 3
+        },
+        {
+            "word": "blue natal",
+            "score": 3
+        },
+        {
+            "word": "wintry leaden",
+            "score": 3
+        },
+        {
+            "word": "gay western",
+            "score": 3
+        },
+        {
+            "word": "cloud-flecked western",
+            "score": 3
+        },
+        {
+            "word": "sunnier and hotter",
+            "score": 3
+        },
+        {
+            "word": "stern frosty",
+            "score": 3
+        },
+        {
+            "word": "still hard and clean",
+            "score": 3
+        },
+        {
+            "word": "serene northern",
+            "score": 3
+        },
+        {
+            "word": "eternal immeasurable",
+            "score": 3
+        },
+        {
+            "word": "profound and excessively blue",
+            "score": 3
+        },
+        {
+            "word": "again grey and dreary",
+            "score": 3
+        },
+        {
+            "word": "again grey",
+            "score": 3
+        },
+        {
+            "word": "cold whitish",
+            "score": 3
+        },
+        {
+            "word": "whitish cold",
+            "score": 3
+        },
+        {
+            "word": "afterwards golden",
+            "score": 3
+        },
+        {
+            "word": "watery nocturnal",
+            "score": 3
+        },
+        {
+            "word": "nocturnal and tenebrous",
+            "score": 3
+        },
+        {
+            "word": "cloudy and nocturnal",
+            "score": 3
+        },
+        {
+            "word": "infinite and luminous",
+            "score": 3
+        },
+        {
+            "word": "incomparably warmer",
+            "score": 3
+        },
+        {
+            "word": "incomparably warmer and deeper",
+            "score": 3
+        },
+        {
+            "word": "late flaming",
+            "score": 3
+        },
+        {
+            "word": "serene grecian",
+            "score": 3
+        },
+        {
+            "word": "grey, autumnal",
+            "score": 3
+        },
+        {
+            "word": "serene tropical",
+            "score": 3
+        },
+        {
+            "word": "brilliant glaring",
+            "score": 3
+        },
+        {
+            "word": "unknown and passionate",
+            "score": 3
+        },
+        {
+            "word": "impressive oriental",
+            "score": 3
+        },
+        {
+            "word": "frosty clear",
+            "score": 3
+        },
+        {
+            "word": "clear and tremulous",
+            "score": 3
+        },
+        {
+            "word": "empty, flawless",
+            "score": 3
+        },
+        {
+            "word": "irregular, gray",
+            "score": 3
+        },
+        {
+            "word": "wan blank",
+            "score": 3
+        },
+        {
+            "word": "warm and lucid",
+            "score": 3
+        },
+        {
+            "word": "clear incomparable",
+            "score": 3
+        },
+        {
+            "word": "social tranquil",
+            "score": 3
+        },
+        {
+            "word": "cloudy, grey",
+            "score": 3
+        },
+        {
+            "word": "vibrantly blue",
+            "score": 3
+        },
+        {
+            "word": "deep, blue-black",
+            "score": 3
+        },
+        {
+            "word": "bright, crazy",
+            "score": 3
+        },
+        {
+            "word": "clear and moonlit",
+            "score": 3
+        },
+        {
+            "word": "pink, feathery",
+            "score": 3
+        },
+        {
+            "word": "sodden, dirty",
+            "score": 3
+        },
+        {
+            "word": "strangely golden",
+            "score": 3
+        },
+        {
+            "word": "dark amethystine",
+            "score": 3
+        },
+        {
+            "word": "pale glassy",
+            "score": 3
+        },
+        {
+            "word": "gray, menacing",
+            "score": 3
+        },
+        {
+            "word": "low and leaden",
+            "score": 3
+        },
+        {
+            "word": "otherwise unaltered",
+            "score": 3
+        },
+        {
+            "word": "black and limitless",
+            "score": 3
+        },
+        {
+            "word": "gray and featureless",
+            "score": 3
+        },
+        {
+            "word": "beloved strange",
+            "score": 3
+        },
+        {
+            "word": "normal blue",
+            "score": 3
+        },
+        {
+            "word": "blue alien",
+            "score": 3
+        },
+        {
+            "word": "east gray",
+            "score": 3
+        },
+        {
+            "word": "white and glaring",
+            "score": 3
+        },
+        {
+            "word": "blue-black upper",
+            "score": 3
+        },
+        {
+            "word": "careless blue",
+            "score": 3
+        },
+        {
+            "word": "vast, uncaring",
+            "score": 3
+        },
+        {
+            "word": "gray siberian",
+            "score": 3
+        },
+        {
+            "word": "delicate turquoise",
+            "score": 3
+        },
+        {
+            "word": "ardent yellow",
+            "score": 3
+        },
+        {
+            "word": "clear but dark",
+            "score": 3
+        },
+        {
+            "word": "newly lifeless",
+            "score": 3
+        },
+        {
+            "word": "pitiless gray",
+            "score": 3
+        },
+        {
+            "word": "clear, frigid",
+            "score": 3
+        },
+        {
+            "word": "banal blue",
+            "score": 3
+        },
+        {
+            "word": "cloudy, heavy",
+            "score": 3
+        },
+        {
+            "word": "distressed, uneasy",
+            "score": 3
+        },
+        {
+            "word": "grey thick",
+            "score": 3
+        },
+        {
+            "word": "radiant western",
+            "score": 3
+        },
+        {
+            "word": "windy, hazy",
+            "score": 2
+        },
+        {
+            "word": "normal lavender",
+            "score": 2
+        },
+        {
+            "word": "black, spacial",
+            "score": 2
+        },
+        {
+            "word": "softly textured",
+            "score": 2
+        },
+        {
+            "word": "faultlessly blue",
+            "score": 2
+        },
+        {
+            "word": "untouched blue",
+            "score": 2
+        },
+        {
+            "word": "polluted orange",
+            "score": 2
+        },
+        {
+            "word": "low-slung leaden",
+            "score": 2
+        },
+        {
+            "word": "chilly wide",
+            "score": 2
+        },
+        {
+            "word": "breathtakingly blue",
+            "score": 2
+        },
+        {
+            "word": "perfectly clear and blue",
+            "score": 2
+        },
+        {
+            "word": "claustrophobic metal",
+            "score": 2
+        },
+        {
+            "word": "turquoise tropical",
+            "score": 2
+        },
+        {
+            "word": "black serene",
+            "score": 2
+        },
+        {
+            "word": "milky pearl-gray",
+            "score": 2
+        },
+        {
+            "word": "bright cloud-flecked",
+            "score": 2
+        },
+        {
+            "word": "cloudy, smoke-filled",
+            "score": 2
+        },
+        {
+            "word": "clear but humid",
+            "score": 2
+        },
+        {
+            "word": "exceptional, spectacular",
+            "score": 2
+        },
+        {
+            "word": "open and cloudless",
+            "score": 2
+        },
+        {
+            "word": "present, crimson",
+            "score": 2
+        },
+        {
+            "word": "livid menacing",
+            "score": 2
+        },
+        {
+            "word": "bright, silver-gray",
+            "score": 2
+        },
+        {
+            "word": "grey and low-slung",
+            "score": 2
+        },
+        {
+            "word": "oppressively solid",
+            "score": 2
+        },
+        {
+            "word": "horrifying, endless",
+            "score": 2
+        },
+        {
+            "word": "punctured empty",
+            "score": 2
+        },
+        {
+            "word": "empty khaki",
+            "score": 2
+        },
+        {
+            "word": "blue and promising",
+            "score": 2
+        },
+        {
+            "word": "somber, discordant",
+            "score": 2
+        },
+        {
+            "word": "truest blue",
+            "score": 2
+        },
+        {
+            "word": "vibrant, cloudless",
+            "score": 2
+        },
+        {
+            "word": "cloudless and stainless",
+            "score": 2
+        },
+        {
+            "word": "artificial inner",
+            "score": 2
+        },
+        {
+            "word": "black and unforgiving",
+            "score": 2
+        },
+        {
+            "word": "blade-metal",
+            "score": 2
+        },
+        {
+            "word": "azure, crystalline",
+            "score": 2
+        },
+        {
+            "word": "glaring, windless",
+            "score": 2
+        },
+        {
+            "word": "sweetly lavender",
+            "score": 2
+        },
+        {
+            "word": "bright and hazy",
+            "score": 2
+        },
+        {
+            "word": "hot gun-metal",
+            "score": 2
+        },
+        {
+            "word": "still low and leaden",
+            "score": 2
+        },
+        {
+            "word": "invariably dark and stormy",
+            "score": 2
+        },
+        {
+            "word": "changeable, blue",
+            "score": 2
+        },
+        {
+            "word": "pale early-morning",
+            "score": 2
+        },
+        {
+            "word": "cloudless blue-green",
+            "score": 2
+        },
+        {
+            "word": "broad sultry",
+            "score": 2
+        },
+        {
+            "word": "indescribable and nonexistent",
+            "score": 2
+        },
+        {
+            "word": "foul, clear",
+            "score": 2
+        },
+        {
+            "word": "empty, cloudless",
+            "score": 2
+        },
+        {
+            "word": "dazzling, late-afternoon",
+            "score": 2
+        },
+        {
+            "word": "grim, bloodied",
+            "score": 2
+        },
+        {
+            "word": "slow-moving cloudy",
+            "score": 2
+        },
+        {
+            "word": "black, jewelled",
+            "score": 2
+        },
+        {
+            "word": "radiant, ever-changing",
+            "score": 2
+        },
+        {
+            "word": "blue, uncommunicative",
+            "score": 2
+        },
+        {
+            "word": "blue and windless",
+            "score": 2
+        },
+        {
+            "word": "autumnally blue",
+            "score": 2
+        },
+        {
+            "word": "cancerous, yellow",
+            "score": 2
+        },
+        {
+            "word": "hollow, silvery",
+            "score": 2
+        },
+        {
+            "word": "cloudless black",
+            "score": 2
+        },
+        {
+            "word": "pallidly luminous",
+            "score": 2
+        },
+        {
+            "word": "greenish, pallid",
+            "score": 2
+        },
+        {
+            "word": "still limpid and bright",
+            "score": 2
+        },
+        {
+            "word": "dazzling, implacable",
+            "score": 2
+        },
+        {
+            "word": "gray arctic",
+            "score": 2
+        },
+        {
+            "word": "sodden and funereal",
+            "score": 2
+        },
+        {
+            "word": "naked, dark",
+            "score": 2
+        },
+        {
+            "word": "pretentious blue",
+            "score": 2
+        },
+        {
+            "word": "blank artificial",
+            "score": 2
+        },
+        {
+            "word": "smoky, cloudy",
+            "score": 2
+        },
+        {
+            "word": "utterly cloudless",
+            "score": 2
+        },
+        {
+            "word": "black and freckled",
+            "score": 2
+        },
+        {
+            "word": "washed-out, smoke-stained",
+            "score": 2
+        },
+        {
+            "word": "still dark and gloomy",
+            "score": 2
+        },
+        {
+            "word": "hard, cloudless",
+            "score": 2
+        },
+        {
+            "word": "uncaring white",
+            "score": 2
+        },
+        {
+            "word": "blue, unyielding",
+            "score": 2
+        },
+        {
+            "word": "bright, cloud-flecked",
+            "score": 2
+        },
+        {
+            "word": "dirty turquoise",
+            "score": 2
+        },
+        {
+            "word": "still-dark southwestern",
+            "score": 2
+        },
+        {
+            "word": "pale smoggy",
+            "score": 2
+        },
+        {
+            "word": "blue peruvian",
+            "score": 2
+        },
+        {
+            "word": "enormous, beautiful",
+            "score": 2
+        },
+        {
+            "word": "riotous eastern",
+            "score": 2
+        },
+        {
+            "word": "staggering pink",
+            "score": 2
+        },
+        {
+            "word": "blue, hostile",
+            "score": 2
+        },
+        {
+            "word": "deeply crystalline",
+            "score": 2
+        },
+        {
+            "word": "cloudless red",
+            "score": 2
+        },
+        {
+            "word": "unpleasant, featureless",
+            "score": 2
+        },
+        {
+            "word": "hideous charcoal",
+            "score": 2
+        },
+        {
+            "word": "wormy, smoke-filled",
+            "score": 2
+        },
+        {
+            "word": "black and unchanging",
+            "score": 2
+        },
+        {
+            "word": "livid colored",
+            "score": 2
+        },
+        {
+            "word": "cloudless, coppery",
+            "score": 2
+        },
+        {
+            "word": "serene, vernal",
+            "score": 2
+        },
+        {
+            "word": "leaden and windless",
+            "score": 2
+        },
+        {
+            "word": "black baffling",
+            "score": 2
+        },
+        {
+            "word": "dead, pitiless",
+            "score": 2
+        },
+        {
+            "word": "splendidly clear and pure",
+            "score": 2
+        },
+        {
+            "word": "broad, watery",
+            "score": 2
+        },
+        {
+            "word": "generally clear and bright",
+            "score": 2
+        },
+        {
+            "word": "perfect turquoise",
+            "score": 2
+        },
+        {
+            "word": "blue, triumphal",
+            "score": 2
+        },
+        {
+            "word": "grey laden",
+            "score": 2
+        },
+        {
+            "word": "light-blue southern",
+            "score": 2
+        },
+        {
+            "word": "blue unchanging",
+            "score": 2
+        },
+        {
+            "word": "gray, pitiless",
+            "score": 2
+        },
+        {
+            "word": "tropically stormy",
+            "score": 2
+        },
+        {
+            "word": "gloomy and magnificent",
+            "score": 2
+        },
+        {
+            "word": "blue and brazen",
+            "score": 2
+        },
+        {
+            "word": "thy remoter",
+            "score": 2
+        },
+        {
+            "word": "bleak, leaden",
+            "score": 2
+        },
+        {
+            "word": "tangible soft",
+            "score": 2
+        },
+        {
+            "word": "hot and ever bright",
+            "score": 2
+        },
+        {
+            "word": "rich, cloudy",
+            "score": 2
+        },
+        {
+            "word": "mauve and misty",
+            "score": 2
+        },
+        {
+            "word": "yon rainy",
+            "score": 2
+        },
+        {
+            "word": "blue-black eastern",
+            "score": 2
+        },
+        {
+            "word": "unspeakably fresh and blue",
+            "score": 2
+        },
+        {
+            "word": "wonderful variegated",
+            "score": 2
+        },
+        {
+            "word": "dappled eastern",
+            "score": 2
+        },
+        {
+            "word": "ceaseless blue",
+            "score": 2
+        },
+        {
+            "word": "smoky, greenish",
+            "score": 2
+        },
+        {
+            "word": "blue and radiant",
+            "score": 2
+        },
+        {
+            "word": "monotonous, misty",
+            "score": 2
+        },
+        {
+            "word": "cloudless italian",
+            "score": 2
+        },
+        {
+            "word": "peaceful southern",
+            "score": 2
+        },
+        {
+            "word": "pale muddy",
+            "score": 2
+        },
+        {
+            "word": "purest, softest",
+            "score": 2
+        },
+        {
+            "word": "wearisome gray",
+            "score": 2
+        },
+        {
+            "word": "green eastern",
+            "score": 2
+        },
+        {
+            "word": "unusually deep and luminous",
+            "score": 2
+        },
+        {
+            "word": "exceedingly bright and wide",
+            "score": 2
+        },
+        {
+            "word": "cloudless, infinite",
+            "score": 2
+        },
+        {
+            "word": "broad, pearl-gray",
+            "score": 2
+        },
+        {
+            "word": "unsteady, unfamiliar",
+            "score": 2
+        },
+        {
+            "word": "calm athenian",
+            "score": 2
+        },
+        {
+            "word": "sunny palestinian",
+            "score": 2
+        },
+        {
+            "word": "pearl-gray northern",
+            "score": 2
+        },
+        {
+            "word": "keen turquoise",
+            "score": 2
+        },
+        {
+            "word": "blue, radiant",
+            "score": 2
+        },
+        {
+            "word": "domestic or regimental",
+            "score": 2
+        },
+        {
+            "word": "famous pure",
+            "score": 2
+        },
+        {
+            "word": "black and cloudy",
+            "score": 2
+        },
+        {
+            "word": "constantly azure",
+            "score": 2
+        },
+        {
+            "word": "ther infinite",
+            "score": 2
+        },
+        {
+            "word": "blue, airless",
+            "score": 2
+        },
+        {
+            "word": "blue, arched",
+            "score": 2
+        },
+        {
+            "word": "cloudless brazen",
+            "score": 2
+        },
+        {
+            "word": "steely western",
+            "score": 2
+        },
+        {
+            "word": "grey over-arching",
+            "score": 2
+        },
+        {
+            "word": "grey northeastern",
+            "score": 2
+        },
+        {
+            "word": "yon wintry",
+            "score": 2
+        },
+        {
+            "word": "grey cloudless",
+            "score": 2
+        },
+        {
+            "word": "sick metal",
+            "score": 2
+        },
+        {
+            "word": "grey or ruddy",
+            "score": 2
+        },
+        {
+            "word": "magnificently cloudy",
+            "score": 2
+        },
+        {
+            "word": "old, leaden",
+            "score": 2
+        },
+        {
+            "word": "richer, bright",
+            "score": 2
+        },
+        {
+            "word": "vague australian",
+            "score": 2
+        },
+        {
+            "word": "silvery pale",
+            "score": 2
+        },
+        {
+            "word": "bright but fickle",
+            "score": 2
+        },
+        {
+            "word": "perpetually blue and white",
+            "score": 2
+        },
+        {
+            "word": "rainbow-hued western",
+            "score": 2
+        },
+        {
+            "word": "murky, windless",
+            "score": 2
+        },
+        {
+            "word": "grey troubled",
+            "score": 2
+        },
+        {
+            "word": "beautiful, indifferent",
+            "score": 2
+        },
+        {
+            "word": "yellow, eastern",
+            "score": 2
+        },
+        {
+            "word": "cloudless, breathless",
+            "score": 2
+        },
+        {
+            "word": "woodland and blue",
+            "score": 2
+        },
+        {
+            "word": "opalescent eastern",
+            "score": 2
+        },
+        {
+            "word": "unkempt, unbounded",
+            "score": 2
+        },
+        {
+            "word": "clear parental",
+            "score": 2
+        },
+        {
+            "word": "strongly blue",
+            "score": 2
+        },
+        {
+            "word": "windy nocturnal",
+            "score": 2
+        },
+        {
+            "word": "colorless, smoky",
+            "score": 2
+        },
+        {
+            "word": "also whitish and promising",
+            "score": 2
+        },
+        {
+            "word": "also whitish",
+            "score": 2
+        },
+        {
+            "word": "blue-black frosty",
+            "score": 2
+        },
+        {
+            "word": "gracious, infinite",
+            "score": 2
+        },
+        {
+            "word": "high, brassy",
+            "score": 2
+        },
+        {
+            "word": "always gloomy and black",
+            "score": 2
+        },
+        {
+            "word": "cloudless ruddy",
+            "score": 2
+        },
+        {
+            "word": "blue, torrid",
+            "score": 2
+        },
+        {
+            "word": "glaring turquoise",
+            "score": 2
+        },
+        {
+            "word": "pale and serene",
+            "score": 2
+        },
+        {
+            "word": "higher, illuminating",
+            "score": 2
+        },
+        {
+            "word": "luminous, unfathomable",
+            "score": 2
+        },
+        {
+            "word": "gloomy, blue",
+            "score": 2
+        },
+        {
+            "word": "strangely intense and vivid",
+            "score": 2
+        },
+        {
+            "word": "cloudless, glaring",
+            "score": 2
+        },
+        {
+            "word": "wild flaming",
+            "score": 2
+        },
+        {
+            "word": "pure and lovely blue",
+            "score": 2
+        },
+        {
+            "word": "placid western",
+            "score": 2
+        },
+        {
+            "word": "complacent and complimentary",
+            "score": 2
+        },
+        {
+            "word": "raw and alien",
+            "score": 2
+        },
+        {
+            "word": "gloomy, leaden",
+            "score": 2
+        },
+        {
+            "word": "arched and splendid",
+            "score": 2
+        },
+        {
+            "word": "brassy, cloudless",
+            "score": 2
+        },
+        {
+            "word": "brilliant stormy",
+            "score": 2
+        },
+        {
+            "word": "pale and shallow",
+            "score": 2
+        },
+        {
+            "word": "sad, breathless",
+            "score": 2
+        },
+        {
+            "word": "hopelessly leaden",
+            "score": 2
+        },
+        {
+            "word": "unchangeable italian",
+            "score": 2
+        },
+        {
+            "word": "sombre low",
+            "score": 2
+        },
+        {
+            "word": "pale, scorched",
+            "score": 2
+        },
+        {
+            "word": "faintly dappled",
+            "score": 2
+        },
+        {
+            "word": "inexhaustible blue",
+            "score": 2
+        },
+        {
+            "word": "wholly cloudless",
+            "score": 2
+        },
+        {
+            "word": "blue and arched",
+            "score": 2
+        },
+        {
+            "word": "wonderfully blue and cloudless",
+            "score": 2
+        },
+        {
+            "word": "windy, cloudless",
+            "score": 2
+        },
+        {
+            "word": "new and cloudless",
+            "score": 2
+        },
+        {
+            "word": "cool brilliant",
+            "score": 2
+        },
+        {
+            "word": "singularly clear and cloudless",
+            "score": 2
+        },
+        {
+            "word": "bluish fiery",
+            "score": 2
+        },
+        {
+            "word": "pallid and cloudless",
+            "score": 2
+        },
+        {
+            "word": "serene and balmy",
+            "score": 2
+        },
+        {
+            "word": "blue stormy",
+            "score": 2
+        },
+        {
+            "word": "quite noble and inspiring",
+            "score": 2
+        },
+        {
+            "word": "deep cloudless",
+            "score": 2
+        },
+        {
+            "word": "murky and sombre",
+            "score": 2
+        },
+        {
+            "word": "seemingly translucent",
+            "score": 2
+        },
+        {
+            "word": "low-lying bituminous",
+            "score": 2
+        },
+        {
+            "word": "grim leaden",
+            "score": 2
+        },
+        {
+            "word": "faintly clearer",
+            "score": 2
+        },
+        {
+            "word": "azure cloud-flecked",
+            "score": 2
+        },
+        {
+            "word": "still black and full",
+            "score": 2
+        },
+        {
+            "word": "clamorous, cloudless",
+            "score": 2
+        },
+        {
+            "word": "morose, ominous",
+            "score": 2
+        },
+        {
+            "word": "low, funereal",
+            "score": 2
+        },
+        {
+            "word": "vague dusky",
+            "score": 2
+        },
+        {
+            "word": "pearly southern",
+            "score": 2
+        },
+        {
+            "word": "steely cloudless",
+            "score": 2
+        },
+        {
+            "word": "snowy, misty",
+            "score": 2
+        },
+        {
+            "word": "darkling crimson",
+            "score": 2
+        },
+        {
+            "word": "ever-crystal",
+            "score": 2
+        },
+        {
+            "word": "arrival and floodlit",
+            "score": 2
+        },
+        {
+            "word": "always dark and foggy",
+            "score": 2
+        },
+        {
+            "word": "whitish, desolate",
+            "score": 2
+        },
+        {
+            "word": "clear and almost cloudless",
+            "score": 2
+        },
+        {
+            "word": "cloudy and serene",
+            "score": 2
+        },
+        {
+            "word": "ordinarily cloudy",
+            "score": 2
+        },
+        {
+            "word": "cloudy or sunny",
+            "score": 2
+        },
+        {
+            "word": "wan and dreary",
+            "score": 2
+        },
+        {
+            "word": "majestically high and clear",
+            "score": 2
+        },
+        {
+            "word": "majestically high",
+            "score": 2
+        },
+        {
+            "word": "doubtful cloudy",
+            "score": 2
+        },
+        {
+            "word": "overwhelming, leaden",
+            "score": 2
+        },
+        {
+            "word": "rough, inverted",
+            "score": 2
+        },
+        {
+            "word": "blue glaring",
+            "score": 2
+        },
+        {
+            "word": "brilliant and enchanting",
+            "score": 2
+        },
+        {
+            "word": "black and seemingly empty",
+            "score": 2
+        },
+        {
+            "word": "grey and wind-swept",
+            "score": 2
+        },
+        {
+            "word": "pale vacant",
+            "score": 2
+        },
+        {
+            "word": "leafy eastern",
+            "score": 2
+        },
+        {
+            "word": "darker, lower",
+            "score": 2
+        },
+        {
+            "word": "whole over-arching",
+            "score": 2
+        },
+        {
+            "word": "vast and sheeted",
+            "score": 2
+        },
+        {
+            "word": "pale northwestern",
+            "score": 2
+        },
+        {
+            "word": "blue, vernal",
+            "score": 2
+        },
+        {
+            "word": "strangely leaden and low",
+            "score": 2
+        },
+        {
+            "word": "warmer, fairer",
+            "score": 2
+        },
+        {
+            "word": "pitiless, leaden",
+            "score": 2
+        },
+        {
+            "word": "puffy, leaden",
+            "score": 2
+        },
+        {
+            "word": "livid and greenish",
+            "score": 2
+        },
+        {
+            "word": "dark inaccessible",
+            "score": 2
+        },
+        {
+            "word": "delicate wintry",
+            "score": 2
+        },
+        {
+            "word": "sombre and delicate",
+            "score": 2
+        },
+        {
+            "word": "hot, brazen",
+            "score": 2
+        },
+        {
+            "word": "ethereal, unfathomable",
+            "score": 2
+        },
+        {
+            "word": "royally blue",
+            "score": 2
+        },
+        {
+            "word": "woolly warm",
+            "score": 2
+        },
+        {
+            "word": "still fortunate",
+            "score": 2
+        },
+        {
+            "word": "cloudless and almost blue",
+            "score": 2
+        },
+        {
+            "word": "constantly blue and cloudless",
+            "score": 2
+        },
+        {
+            "word": "constantly blue",
+            "score": 2
+        },
+        {
+            "word": "ruddy, western",
+            "score": 2
+        },
+        {
+            "word": "limitless, refractory",
+            "score": 2
+        },
+        {
+            "word": "far-off serene",
+            "score": 2
+        },
+        {
+            "word": "wide remorseless",
+            "score": 2
+        },
+        {
+            "word": "grim unblinking",
+            "score": 2
+        },
+        {
+            "word": "lurid cloudy",
+            "score": 2
+        },
+        {
+            "word": "far dappled",
+            "score": 2
+        },
+        {
+            "word": "luminous eastern",
+            "score": 2
+        },
+        {
+            "word": "stormy, red",
+            "score": 2
+        },
+        {
+            "word": "distant, disinterested",
+            "score": 2
+        },
+        {
+            "word": "blue, immedial",
+            "score": 2
+        },
+        {
+            "word": "drab, drab",
+            "score": 2
+        },
+        {
+            "word": "dim and mellow",
+            "score": 2
+        },
+        {
+            "word": "softly blue and full",
+            "score": 2
+        },
+        {
+            "word": "wonderful late-summer",
+            "score": 2
+        },
+        {
+            "word": "softer blue",
+            "score": 2
+        },
+        {
+            "word": "cold and pleasant",
+            "score": 2
+        },
+        {
+            "word": "serene and pitiless",
+            "score": 2
+        },
+        {
+            "word": "ashen azure",
+            "score": 2
+        },
+        {
+            "word": "glorious and ever beautiful",
+            "score": 2
+        },
+        {
+            "word": "clear grecian",
+            "score": 2
+        },
+        {
+            "word": "grey sultry",
+            "score": 2
+        },
+        {
+            "word": "quite serene or tranquil",
+            "score": 2
+        },
+        {
+            "word": "whole cloudless",
+            "score": 2
+        },
+        {
+            "word": "tropical and cloudless",
+            "score": 2
+        },
+        {
+            "word": "consistent blue",
+            "score": 2
+        },
+        {
+            "word": "white and rainy",
+            "score": 2
+        },
+        {
+            "word": "nude and ethical",
+            "score": 2
+        },
+        {
+            "word": "tensely blue",
+            "score": 2
+        },
+        {
+            "word": "inexpressible blue",
+            "score": 2
+        },
+        {
+            "word": "likewise wondrous",
+            "score": 2
+        },
+        {
+            "word": "spacious and likewise wondrous",
+            "score": 2
+        },
+        {
+            "word": "bluest, softest",
+            "score": 2
+        },
+        {
+            "word": "dimmer daytime",
+            "score": 2
+        },
+        {
+            "word": "blue asiatic",
+            "score": 2
+        },
+        {
+            "word": "angry, crimson",
+            "score": 2
+        },
+        {
+            "word": "palely clear",
+            "score": 2
+        },
+        {
+            "word": "least, blue",
+            "score": 2
+        },
+        {
+            "word": "rainless egyptian",
+            "score": 2
+        },
+        {
+            "word": "pale-blue wind-swept",
+            "score": 2
+        },
+        {
+            "word": "still low and dark",
+            "score": 2
+        },
+        {
+            "word": "extremely clear and bright",
+            "score": 2
+        },
+        {
+            "word": "grey sunny",
+            "score": 2
+        },
+        {
+            "word": "calm, milky",
+            "score": 2
+        },
+        {
+            "word": "calmest, loveliest",
+            "score": 2
+        },
+        {
+            "word": "brilliantly blue and cloudless",
+            "score": 2
+        },
+        {
+            "word": "flawless southern",
+            "score": 2
+        },
+        {
+            "word": "beautifully blue-black",
+            "score": 2
+        },
+        {
+            "word": "beautifully blue-black and clear",
+            "score": 2
+        },
+        {
+            "word": "dead infinite",
+            "score": 2
+        },
+        {
+            "word": "rude unsettled",
+            "score": 2
+        },
+        {
+            "word": "pearly western",
+            "score": 2
+        },
+        {
+            "word": "lovely concave",
+            "score": 2
+        },
+        {
+            "word": "definitely blue",
+            "score": 2
+        },
+        {
+            "word": "pale southwestern",
+            "score": 2
+        },
+        {
+            "word": "sullen southern",
+            "score": 2
+        },
+        {
+            "word": "blue, unconcerned",
+            "score": 2
+        },
+        {
+            "word": "wide paternal",
+            "score": 2
+        },
+        {
+            "word": "dark, rainless",
+            "score": 2
+        },
+        {
+            "word": "grey monotone",
+            "score": 2
+        },
+        {
+            "word": "implacable leaden",
+            "score": 2
+        },
+        {
+            "word": "greenish, western",
+            "score": 2
+        },
+        {
+            "word": "clear, blue-black",
+            "score": 2
+        },
+        {
+            "word": "dull and humid",
+            "score": 2
+        },
+        {
+            "word": "yon equal",
+            "score": 2
+        },
+        {
+            "word": "bright apocalyptic",
+            "score": 2
+        },
+        {
+            "word": "sleepy sunshiny",
+            "score": 2
+        },
+        {
+            "word": "plain and over-arching",
+            "score": 2
+        },
+        {
+            "word": "unalterable blue",
+            "score": 2
+        },
+        {
+            "word": "blue and resplendent",
+            "score": 2
+        },
+        {
+            "word": "azure african",
+            "score": 2
+        },
+        {
+            "word": "sweetly blue and serene",
+            "score": 2
+        },
+        {
+            "word": "blue sleepy",
+            "score": 2
+        },
+        {
+            "word": "bright far-off",
+            "score": 2
+        },
+        {
+            "word": "cloudless, italian",
+            "score": 2
+        },
+        {
+            "word": "plain and cloudless",
+            "score": 2
+        },
+        {
+            "word": "black and wrathful",
+            "score": 2
+        },
+        {
+            "word": "brassy, green",
+            "score": 2
+        },
+        {
+            "word": "always serene and bright",
+            "score": 2
+        },
+        {
+            "word": "ever blue and calm",
+            "score": 2
+        },
+        {
+            "word": "misty, pearl-gray",
+            "score": 2
+        },
+        {
+            "word": "sombre, windy",
+            "score": 2
+        },
+        {
+            "word": "far-off, alien",
+            "score": 2
+        },
+        {
+            "word": "serene cloudless",
+            "score": 2
+        },
+        {
+            "word": "responsive western",
+            "score": 2
+        },
+        {
+            "word": "calm but misty",
+            "score": 2
+        },
+        {
+            "word": "sullen, hideous",
+            "score": 2
+        },
+        {
+            "word": "truly real and delightful",
+            "score": 2
+        },
+        {
+            "word": "sunny silvery",
+            "score": 2
+        },
+        {
+            "word": "relentless, silent",
+            "score": 2
+        },
+        {
+            "word": "continuously cloudless",
+            "score": 2
+        },
+        {
+            "word": "azure, cloudless",
+            "score": 2
+        },
+        {
+            "word": "clean, great",
+            "score": 2
+        },
+        {
+            "word": "blue and happy",
+            "score": 2
+        },
+        {
+            "word": "azure eastern",
+            "score": 2
+        },
+        {
+            "word": "constantly clear and serene",
+            "score": 2
+        },
+        {
+            "word": "generally clear and serene",
+            "score": 2
+        },
+        {
+            "word": "immeasurable free",
+            "score": 2
+        },
+        {
+            "word": "hitherto brazen",
+            "score": 2
+        },
+        {
+            "word": "distant and tranquil",
+            "score": 2
+        },
+        {
+            "word": "purple and ever cloudless",
+            "score": 2
+        },
+        {
+            "word": "bright smokeless",
+            "score": 2
+        },
+        {
+            "word": "grey inverted",
+            "score": 2
+        },
+        {
+            "word": "blue afghan",
+            "score": 2
+        },
+        {
+            "word": "still clear and pure",
+            "score": 2
+        },
+        {
+            "word": "translucent yellow-green",
+            "score": 2
+        },
+        {
+            "word": "molten tropical",
+            "score": 2
+        },
+        {
+            "word": "sombre and low",
+            "score": 2
+        },
+        {
+            "word": "breathless, brazen",
+            "score": 2
+        },
+        {
+            "word": "bright and pitiless",
+            "score": 2
+        },
+        {
+            "word": "feigned blue",
+            "score": 2
+        },
+        {
+            "word": "invariably grey",
+            "score": 2
+        },
+        {
+            "word": "completely crimson",
+            "score": 2
+        },
+        {
+            "word": "light-blue, transparent",
+            "score": 2
+        },
+        {
+            "word": "comparatively clear and blue",
+            "score": 2
+        },
+        {
+            "word": "serene and sparkling",
+            "score": 2
+        },
+        {
+            "word": "steel-gray black",
+            "score": 2
+        },
+        {
+            "word": "pale dense",
+            "score": 2
+        },
+        {
+            "word": "tenderly blue",
+            "score": 2
+        },
+        {
+            "word": "dark unclouded",
+            "score": 2
+        },
+        {
+            "word": "faint ashen",
+            "score": 2
+        },
+        {
+            "word": "dim, alluring",
+            "score": 2
+        },
+        {
+            "word": "tolerable southern",
+            "score": 2
+        },
+        {
+            "word": "far-off ethereal",
+            "score": 2
+        },
+        {
+            "word": "pure, dark-blue",
+            "score": 2
+        },
+        {
+            "word": "exceedingly clear and brilliant",
+            "score": 2
+        },
+        {
+            "word": "ungenial and unhealthy",
+            "score": 2
+        },
+        {
+            "word": "serene amethystine",
+            "score": 2
+        },
+        {
+            "word": "marvellously deep",
+            "score": 2
+        },
+        {
+            "word": "marvellously deep and blue",
+            "score": 2
+        },
+        {
+            "word": "cold over-arching",
+            "score": 2
+        },
+        {
+            "word": "stagnant or pestilential",
+            "score": 2
+        }
+    ]
+}
