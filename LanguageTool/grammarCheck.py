@@ -46,15 +46,6 @@ class GrammarCheck:
         # (a) Someone hovers over that section of text or
         # (b) As a panel of issues which can be corrected by clicking on the relevant issue
 
-    def check(self, rule, word):
-        if(rule):
-            print(word)
-            # if the word appears in the ; then we highlight it
-            if word in rule.context:
-                return True
-            else:
-                return False
-
     def styler(error):
         html = error.context
         from_ = error.offsetInContext

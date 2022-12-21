@@ -8,37 +8,22 @@ from grammarCheck import GrammarCheck
 
 
 class GrammarWidget(QFrame):
-    def __init__(self, grammarCheck):
+    def __init__(self, rule, showContext=False):
         super(GrammarWidget, self).__init__()
         self.setFrameShape(QFrame.StyledPanel)
         self.setFrameShadow(QFrame.Raised)
         self.layout = QVBoxLayout()
-        self.categoryLabel = QLabel("Category")
-        self.btnInsert = QPushButton("Accept Suggestion")
+        self.rule = rule
+        self.showContext = showContext
+        self.text = ""  # the complete text we wish to correct
         self.txtContext = QTextEdit()
         self.txtContext.highlighter = Highlighter(self.txtContext.document())
-        self.txtContext.highlighter.setSpeller(grammarCheck.check)
-        self.suggestionLabel = QLabel("Suggestion")
-        self.txtSuggestion = QTextEdit()
-        self.layout.addWidget(self.categoryLabel)
+        self.txtContext.highlighter.setGrammarRule(self.rule)
         self.layout.addWidget(self.txtContext)
-        self.layout.addWidget(self.suggestionLabel)
-        self.layout.addWidget(self.txtSuggestion)
-        self.layout.addWidget(self.btnInsert)
         self.setLayout(self.layout)
 
     def setContext(self, context):
         self.txtContext.setText(context)
 
-    def setSuggestions(self, suggestions):
-        if(len(suggestions) > 1):
-            for suggestion in suggestions:
-                self.txtSuggestion.setText(
-                    self.txtSuggestion.toPlainText() + "," + suggestion)
-        elif(len(suggestions) == 1):
-            self.txtSuggestion.setText(suggestions[0])
-        else:
-            self.txtSuggestion.setText("")
-
-    def setCategoryDetails(self, details):
-        self.categoryLabel.setText(details)
+    def setText(self, text):
+        self.text = text
