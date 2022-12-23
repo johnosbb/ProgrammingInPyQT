@@ -52,20 +52,6 @@ class CorrectorTextEdit(QTextEdit):
         self.contextMenu.addAction(action1)
         self.contextMenu.addAction(action2)
 
-        # self.contextMenu.exec_(QCursor.pos())
-
-    # def contextMenuEvent(self, event: QContextMenuEvent) -> None:
-    #     self.contextMenu = self.createStandardContextMenu(event.pos())
-    #     print(event.pos())
-
-    #     # we only want to check single isolated words.
-    #     rule = self.findAssociatedRule()
-    #     if rule:
-    #         self.addHelperContexts(rule)
-    #     else:
-    #         print("No rules found for this word")
-    #     self.contextMenu.exec_(event.globalPos())
-
     def addHelperContexts(self, rule):
         suggestions = rule.replacements
         if len(suggestions) > 0:
@@ -116,7 +102,6 @@ class CorrectorTextEdit(QTextEdit):
         for rule in self.rules:
             ruleStart = (rule.offset)
             ruleEnd = (rule.errorLength+rule.offset)
-            # if((start >= ruleStart) and (end <= ruleEnd)):
             if((currentPosition >= ruleStart) and (currentPosition <= ruleEnd)):
                 print(" Position: {} - RS {} - RE {} ".format(
                     currentPosition, ruleStart,  ruleEnd))
