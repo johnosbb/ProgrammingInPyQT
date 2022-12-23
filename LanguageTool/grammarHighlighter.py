@@ -4,7 +4,7 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QSyntaxHighlighter, QTextCharFormat, QTextDocument
 
 
-class Highlighter(QSyntaxHighlighter):
+class GrammarHighlighter(QSyntaxHighlighter):
 
     def __init__(self, parent: QTextDocument) -> None:
         super().__init__(parent)

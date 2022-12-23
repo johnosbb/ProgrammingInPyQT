@@ -6,7 +6,7 @@ from PyQt5.QtPrintSupport import *
 import logging
 import re
 from specialAction import SpecialAction
-from highlighter import Highlighter
+from grammarHighlighter import GrammarHighlighter
 import collections
 from pprint import pprint
 

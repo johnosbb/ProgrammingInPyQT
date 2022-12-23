@@ -3,7 +3,7 @@ import sys
 from PyQt5.QtWidgets import (QApplication, QWidget, QLabel,  QLineEdit,
                              QVBoxLayout, QMainWindow, QScrollArea, QTextEdit)
 from PyQt5.QtCore import Qt
-from highlighter import Highlighter
+from grammarHighlighter import GrammarHighlighter
 from grammarCheck import GrammarCheck
 from correctorTextEdit import CorrectorTextEdit
 
@@ -45,7 +45,7 @@ class GrammarCorrectionWindow(QMainWindow):
             rule.offset, offsetAdjustment))
         self.text = self.txtMain.toPlainText()
         self.updateRuleOffsets(rule, offsetAdjustment)
-        self.txtMain.highlighter.rehighlight()
+        self.txtMain.grammarHighlighter.rehighlight()
 
     def updateRuleOffsets(self, activeRule, offsetAdjustment):
         for rule in self.rules:
@@ -63,8 +63,9 @@ class GrammarCorrectionWindow(QMainWindow):
         self.txtMain.setRules(self.rules)
         self.txtMain.wordReplaced.connect(
             self.wordReplaced)
-        self.txtMain.highlighter = Highlighter(self.txtMain.document())
-        self.txtMain.highlighter.setGrammarRules(self.rules)
+        self.txtMain.grammarHighlighter = GrammarHighlighter(
+            self.txtMain.document())
+        self.txtMain.grammarHighlighter.setGrammarRules(self.rules)
         self.vboxLayout.addWidget(self.txtMain)
 
 
