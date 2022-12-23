@@ -4,7 +4,6 @@ from PyQt5.QtWidgets import (QApplication, QWidget, QLabel,  QLineEdit,
                              QVBoxLayout, QMainWindow, QScrollArea, QTextEdit)
 from PyQt5.QtGui import QPixmap, QImage, QContextMenuEvent
 from PyQt5.QtCore import Qt
-from grammarWidget import GrammarWidget
 from highlighter import Highlighter
 from grammarCheck import GrammarCheck
 from correctorTextEdit import CorrectorTextEdit
@@ -39,7 +38,7 @@ class GrammarCorrectionWindow(QMainWindow):
         self.scroll.setWidget(self.vboxLayoutContainingWidget)
         self.vboxLayoutContainingWidget.setLayout(self.vboxLayout)
         self.setCentralWidget(self.scroll)
-        self.updateControls()
+        self.SetupControls()
         self.show()
 
     def wordReplaced(self, rule, offsetAdjustment):
@@ -58,8 +57,7 @@ class GrammarCorrectionWindow(QMainWindow):
         self.rules.remove(activeRule)
         print("Removing active rule, rules remaining {}".format(len(self.rules)))
 
-    def updateControls(self):
-
+    def SetupControls(self):
         self.txtMain.setMinimumHeight(200)
         self.txtMain.setText(self.text)
         self.txtMain.setRule(self.rules[0])

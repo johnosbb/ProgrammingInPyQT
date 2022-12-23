@@ -7,7 +7,6 @@ import logging
 import re
 from specialAction import SpecialAction
 from highlighter import Highlighter
-# from spellCheck import SpellCheck
 import collections
 from pprint import pprint
 
