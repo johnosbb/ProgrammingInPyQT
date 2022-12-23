@@ -2,7 +2,6 @@
 import sys
 from PyQt5.QtWidgets import (QApplication, QWidget, QLabel,  QLineEdit,
                              QVBoxLayout, QMainWindow, QScrollArea, QTextEdit)
-from PyQt5.QtGui import QPixmap, QImage, QContextMenuEvent
 from PyQt5.QtCore import Qt
 from highlighter import Highlighter
 from grammarCheck import GrammarCheck

@@ -1,7 +1,7 @@
 import re
 
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QSyntaxHighlighter, QTextCharFormat, QFont, QTextDocument
+from PyQt5.QtGui import QSyntaxHighlighter, QTextCharFormat, QTextDocument
 
 
 class Highlighter(QSyntaxHighlighter):
@@ -60,14 +60,3 @@ class Highlighter(QSyntaxHighlighter):
 
     def resetTypeOfCheck(self):
         self.typeOfCheck = "spelling"
-
-    # def check(self, rule, word):
-    #     if(rule):
-    #         print(word)
-    #         # if the word appears in the ; then we highlight it
-    #         if word in rule.context:
-    #             return True
-    #         else:
-    #             return False
-    #     else:
-    #         print("No rule has been set")

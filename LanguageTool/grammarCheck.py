@@ -7,7 +7,6 @@ class GrammarCheck:
         self
     ):
         self.matches = {}
- # DictWithPWL() is an inbuilt method of enchant module. It is used to combine a language dictionary and a custom dictionary also known as Personal Word List(PSL).
         self.tool = language_tool_python.LanguageTool('en-GB')
         self.content = ""
 

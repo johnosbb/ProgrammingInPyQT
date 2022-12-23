@@ -19,15 +19,12 @@ class CorrectorTextEdit(QTextEdit):
         super().__init__(*args[3:])
         self.setContextMenuPolicy(Qt.CustomContextMenu)
         self.createContextMenu()
-        self.customContextMenuRequested.connect(self.createContextMenu)
         self.rule = None
         self.rules = None
 
     def mousePressEvent(self, event):
         if event.button() == Qt.RightButton:
             cursor = self.cursorForPosition(event.pos())
-            # self.contextMenu = self.createStandardContextMenu(event.pos())
-
             position = cursor.position()
             textCursor = self.textCursor()
             textCursor.setPosition(position)
@@ -40,16 +37,6 @@ class CorrectorTextEdit(QTextEdit):
 
     def createContextMenu(self):
         self.contextMenu = QMenu(self)
-        action1 = QAction("First option")
-        action1.triggered.connect(lambda: print(
-            "You have clicked the first option"))
-
-        action2 = QAction("Second option")
-        action2.triggered.connect(lambda: print(
-            "You have clicked the second option"))
-
-        self.contextMenu.addAction(action1)
-        self.contextMenu.addAction(action2)
 
     def addHelperContexts(self, rule):
         suggestions = rule.replacements
