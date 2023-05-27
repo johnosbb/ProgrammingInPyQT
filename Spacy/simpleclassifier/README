@@ -1,5 +1,15 @@
+# Create required directories
+
+mkdir -p data
+mkdir -p output
+
 # Generate the config file from the base_config
 python - m spacy init fill-config ./base_config.cfg ./config.cfg
+
+
+# Generate the data
+
+python ./simpleclassifier.py
 
 # Train and create output
 python - m spacy train config.cfg - -output ./output
