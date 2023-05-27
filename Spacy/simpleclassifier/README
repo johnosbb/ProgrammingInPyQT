@@ -1,0 +1,5 @@
+# Generate the config file from the base_config
+python - m spacy init fill-config ./base_config.cfg ./config.cfg
+
+# Train and create output
+python - m spacy train config.cfg - -output ./output
