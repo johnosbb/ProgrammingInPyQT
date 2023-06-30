@@ -1,4 +1,5 @@
 import spacy
+from spacy.matcher import Matcher
 
 
 # An adverbial clause modifier is used to represent the relationship between a verb and an adverbial clause
@@ -11,14 +12,31 @@ def show_sentence_structure(doc):
             f"Token: {token.text} POS: {token.pos_} - [{spacy.explain(token.pos_)}]  Dependencies: {token.dep_} - [{spacy.explain(token.dep_)}] Fine Grained Tag: {token.tag_} - [{spacy.explain(token.tag_)}]")
 
 
-def is_imperative_form(doc):
+def is_imperative_mood(doc):
+    matcher = Matcher(nlp.vocab)
+    pattern = [
+        {"LOWER": "let"}, {"POS": "PRON", "LOWER": {"IN": ["us", "'s"]}}
+    ]
+    matcher.add("IMPERATIVE_MOOD", [pattern], greedy='LONGEST')
+    matches = matcher(doc)
+    matches.sort(key=lambda x: x[1])
+    # print(len(matches))
+    # for match in matches[:10]:
+    #     print(f"match found = {doc[match[1]:match[2]]}")
+    if(len(matches) > 0):
+        return True
+    else:
+        return False
 
+
+def is_imperative_form(doc):
     num_subjects = 0
     is_imperative = False
+    imperative_mood = is_imperative_mood(doc)
     for token in doc:
-        if token.dep_ == 'nsubj':
+        if token.dep_ == 'nsubj' and not imperative_mood:
             num_subjects += 1
-        if token.pos_ == "VERB" and token.dep_ == "ROOT" and token.tag_ in ["VB", "VBP"]:
+        if (token.pos_ == "VERB" or token.pos_ == "AUX") and token.dep_ == "ROOT" and token.tag_ in ["VB", "VBP"]:
             is_imperative = True
     return is_imperative and (num_subjects == 0)
 
@@ -58,7 +76,16 @@ def is_simple_sentence(doc):
 
 sentences = [
     "Let us wash our clothes",
+    "Let them wash our clothes",
     "Let's wash our clothes",
+    "So, clean your room!",
+    "John, clean your room",
+    "Then clean your room",
+    "Please let me know if you have any questions.",
+    "Let’s not forget to book a hotel room.",
+    "Be quiet",
+    "Don't run",
+    "Do not do that"
 ]
 # sentences = ["The cat is sleeping.", "John and Sarah went to the park.",
 #              "Excellent!",
@@ -84,13 +111,12 @@ for sentence in sentences:
     print(
         f"Target Sentence: {sentence}\n")
     show_sentence_structure(doc)
-    if(is_simple_sentence(doc)):
-        print("This is a simple sentence\n")
-    elif(is_imperative_form(doc)):
+    if(is_imperative_form(doc)):
         print("This is the imperative\n")
+    elif (is_simple_sentence(doc)):
+        print("This is a simple sentence\n")
     elif(is_single_word_utterance(doc)):
         print("This is a single word utterance\n")
     else:
-        print(
-            f"This is an unclassified sentence\n")
+        print("Could not identify the sentence type\n")
     print("-----------------\n")
