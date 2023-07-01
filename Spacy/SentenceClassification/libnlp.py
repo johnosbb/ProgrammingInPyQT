@@ -1,6 +1,118 @@
 import spacy
 from pathlib import Path
 from spacy import displacy
+import textacy as tx
+from spacy.matcher import Matcher
+
+
+verb_patterns_for_verb_phrases = [
+    [{"POS": "AUX"}, {"POS": "VERB"}, {"POS": "ADP"}],
+    [{"POS": "AUX"}, {"POS": "VERB"}],
+    [{"POS": "VERB"}]
+]
+
+
+def contains_root(verb_phrase, root):
+    vp_start = verb_phrase.start  # get the start
+    vp_end = verb_phrase.end  # and end of the phrase
+    # if the root is with the start and end of the phrase then it contains the root.
+    if (root.i >= vp_start and root.i <= vp_end):
+        return True
+    else:
+        return False
+
+
+def find_root_of_sentence(doc):
+    root_token = None
+    for token in doc:
+        if (token.dep_ == "ROOT"):
+            root_token = token
+    return root_token
+
+
+def get_verb_phrases_textacy(doc):
+    root = find_root_of_sentence(doc)
+    verb_phrases = tx.extract.matches.token_matches(
+        doc, verb_patterns_for_verb_phrases)  # returns a list of spans
+    new_vps = []
+    for verb_phrase in verb_phrases:
+        print(type(verb_phrase))  # Output: <class 'str'>
+
+        if (contains_root(verb_phrase, root)):
+            new_vps.append(verb_phrase)
+        else:
+            print(
+                f"We do not consider the clause: {verb_phrase} because it does not reference the root")
+    return new_vps
+
+
+def get_verb_phrases(nlp, doc):
+    verb_phrase_pattern = [
+        {"POS": {"IN": ["VERB", "AUX"]}},
+        {"POS": {"IN": ["VERB", "AUX"]}, "OP": "?"},
+        {"POS": {"IN": ["ADV", "PART", "ADP"]}, "OP": "*"}
+    ]
+    matcher = Matcher(nlp.vocab)
+    matcher.add("VERB_PHRASES", [
+                verb_phrase_pattern], greedy="LONGEST")  # By setting greedy="LONGEST", the matcher will prefer longer matches over shorter ones. It means that if there are multiple patterns that could potentially match the same tokens, the matcher will select the longest matching pattern. This ensures that the matcher tries to find the most specific and comprehensive matches.
+    matches = matcher(doc)
+    matches.sort(key=lambda x: x[1])
+    root = find_root_of_sentence(doc)
+    # print(len(matches))
+    new_vps = []
+    for match in matches[:10]:
+        # print(type(match))
+        #print(match, doc[match[1]:match[2]])
+        verb_phrase = doc[match[1]:match[2]]  # create a span
+        new_vps.append(verb_phrase)
+        # if (contains_root(verb_phrase, root)):
+        #     new_vps.append(verb_phrase)
+        # else:
+        #     print(
+        #         f"We do not consider the verb in : {verb_phrase} because it does not reference the root")
+    return new_vps
+
+# The longer_verb_phrase function finds the longest verb phrase
+
+
+def longer_verb_phrase(verb_phrases):
+    longest_length = 0
+    longest_verb_phrase = None
+    for verb_phrase in verb_phrases:
+        if len(verb_phrase) > longest_length:
+            longest_verb_phrase = verb_phrase
+    return longest_verb_phrase
+
+
+def find_noun_phrase(verb_phrase, noun_phrases, side):
+    for noun_phrase in noun_phrases:
+        print(f"Noun Phrase: {noun_phrase} start {noun_phrase.start}")
+        if (side == "left" and noun_phrase.start < verb_phrase.start):
+            return noun_phrase
+        elif (side == "right" and noun_phrase.start > verb_phrase.start):
+            return noun_phrase
+
+# Returns the left noun phrase, verb phrase and the right noun phrase
+
+
+def find_triplet(doc, nlp=None):
+    verb_phrases = list(get_verb_phrases(nlp, doc))
+    #verb_phrases = list(get_verb_phrases(doc))
+    phrases = []
+
+    verb_phrase = None
+    # if (len(verb_phrases) > 1):
+    #     verb_phrase = longer_verb_phrase(list(verb_phrases))
+    # else:
+    #     verb_phrase = verb_phrases[0]
+    for verb_phrase in verb_phrases:
+        noun_phrases = doc.noun_chunks
+        left_noun_phrase = find_noun_phrase(verb_phrase, noun_phrases, "left")
+        right_noun_phrase = find_noun_phrase(
+            verb_phrase, noun_phrases, "right")
+        phrases.append((left_noun_phrase, verb_phrase, right_noun_phrase))
+    # return (left_noun_phrase, verb_phrase, right_noun_phrase)
+    return phrases
 
 
 def show_sentence_parts(doc):

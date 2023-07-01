@@ -38,6 +38,7 @@ def find_other_verbs(doc, root_token):
 
 nlp = spacy.load('en_core_web_sm')
 sentence = "He eats cheese, but he won't try ice cream."
+sentence = "man walked to work while his wife cycled to the university at the eastern end of the town"
 doc = nlp(sentence)
 
 for token in doc:

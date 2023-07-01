@@ -23,6 +23,12 @@ def main():
     for clause in clauses:
         print(f"clause: {clause}")
     lnlp.show_noun_chunks(doc)
+    print("Verb phrases\n--------\n")
+    # (left_np, vp, right_np) = lnlp.find_triplet(doc, nlp)
+    phrases = lnlp.find_triplet(doc, nlp)
+    for phrase in phrases:
+        print(phrase[0], "\t", phrase[1], "\t", phrase[2])
+    # print(left_np, "\t", vp, "\t", right_np)
     lnlp.render(doc)
 
 
