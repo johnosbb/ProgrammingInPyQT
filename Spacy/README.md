@@ -7,7 +7,8 @@ Consider the sentence:
 - The cat sat on the mat.
 
 
-![image](https://github.com/johnosbb/ProgrammingInPyQT/assets/12407183/5e4bcfc2-f90c-4010-a250-0f9010fce5c8)
+![image](https://github.com/johnosbb/ProgrammingInPyQT/assets/12407183/57794b3d-59d4-41d5-944c-3b26eb2f1192)
+
 
 This has the following structure.
 
@@ -24,6 +25,13 @@ This has the following structure.
 | .            | 6      | PUNCT    | punct    | punctuation              | sat                  |            |
 
 ```
+
+- 'The' has ancestors 'cat' and 'sat', but it has no children as seen on the graph, there is no arrow starting from 'The and travelling to another token.
+- 'cat' has an ancestor 'sat' as seen in the arrow that starts from sat and points back to 'sat'. 'cat' also has a 'The' with the arrow originating at 'sat and pointing back to 'cat'.
+- 'sat' the ROOT has no ancestors, but it does have two children, one on each side.
+- Similarly 'sat' is an ancestor of 'on'
+- 'mat' has ancestors 'on' through a direct dependency and sat indirectly via 'on's relationship with 'sat'. 'mat' also has a child 'a'.
+
 
 ## References
 
