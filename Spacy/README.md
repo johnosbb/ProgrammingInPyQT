@@ -27,7 +27,7 @@ This has the following structure.
 ```
 
 
-```text
+```
 
 Constituent tree:
 
