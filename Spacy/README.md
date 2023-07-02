@@ -11,7 +11,7 @@ Consider the sentence:
 
 This has the following structure.
 
-'''text
+'''txt
 
 Text         | Index  | POS      | Dep      | Dep Detail               | Ancestors            | Children   
 ----------------------------------------------------------------------------------------------------------------------
