@@ -26,6 +26,18 @@ This has the following structure.
 
 ```
 
+
+'''txt
+Constituent tree:
+
+(S (NP The cat)
+   (VP sat
+       (PP on
+           (NP a mat)))
+   .)
+
+```
+
 - 'The' has ancestors 'cat' and 'sat', but it has no children as seen on the graph, there is no arrow starting from 'The and travelling to another token.
 - 'cat' has an ancestor 'sat' as seen in the arrow that starts from sat and points back to 'sat'. 'cat' also has a 'The' with the arrow originating at 'sat and pointing back to 'cat'.
 - 'sat' the ROOT has no ancestors, but it does have two children, one on each side.
