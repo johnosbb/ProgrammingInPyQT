@@ -11,24 +11,18 @@ Consider the sentence:
 
 This has the following structure.
 
-'''txt
 
-Text         | Index  | POS      | Dep      | Dep Detail               | Ancestors            | Children   
-----------------------------------------------------------------------------------------------------------------------
-The          | 0      | DET      | det      | determiner               | cat sat              |            
-----------------------------------------------------------------------------------------------------------------------
-cat          | 1      | NOUN     | nsubj    | nominal subject          | sat                  | The        
-----------------------------------------------------------------------------------------------------------------------
-sat          | 2      | VERB     | ROOT     | root                     |                      | cat on .   
-----------------------------------------------------------------------------------------------------------------------
-on           | 3      | ADP      | prep     | prepositional modifier   | sat                  | mat        
-----------------------------------------------------------------------------------------------------------------------
-a            | 4      | DET      | det      | determiner               | mat on sat           |            
-----------------------------------------------------------------------------------------------------------------------
-mat          | 5      | NOUN     | pobj     | object of preposition    | on sat               | a          
-----------------------------------------------------------------------------------------------------------------------
-.            | 6      | PUNCT    | punct    | punctuation              | sat                  |            
-----------------------------------------------------------------------------------------------------------------------
+
+| Text         | Index  | POS      | Dep      | Dep Detail               | Ancestors            | Children   |
+| ------------ | -------- | ------ | -------- | ------------------- |-------------- | --------- |
+| The          | 0      | DET      | det      | determiner               | cat sat              |            |
+| cat          | 1      | NOUN     | nsubj    | nominal subject          | sat                  | The        |
+| sat          | 2      | VERB     | ROOT     | root                     |                      | cat on .   |
+| on           | 3      | ADP      | prep     | prepositional modifier   | sat                  | mat        |
+| a            | 4      | DET      | det      | determiner               | mat on sat           |            |
+| mat          | 5      | NOUN     | pobj     | object of preposition    | on sat               | a          |
+| .            | 6      | PUNCT    | punct    | punctuation              | sat                  |            |
+
 ```
 
 ## References
