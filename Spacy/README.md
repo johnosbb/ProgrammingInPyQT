@@ -27,7 +27,8 @@ This has the following structure.
 ```
 
 
-'''txt
+'''text
+
 Constituent tree:
 
 (S (NP The cat)
