@@ -121,7 +121,9 @@ def show_sentence_parts(doc):
         'Text', 'Index', 'POS', 'Dep', 'Dep Detail', 'Ancestors', 'Children'))
     print("----------------------------------------------------------------------------------------------------------------------")
     for token in doc:
+        # the term "ancestors" refers to the set of nodes that are higher in the parse tree hierarchy and lead to the current token or span of tokens.
         ancestors = ' '.join([t.text for t in token.ancestors])
+        # "children" refer to the nodes that are directly dependent on the current token or span of tokens in the parse tree. Children can be thought of as the "child" nodes that are connected to the current node.
         children = ' '.join([t.text for t in token.children])
 
         print("{:<12} | {:<6} | {:<8} | {:<8} | {:<24} | {:<20} | {:<10} ".format(
@@ -146,10 +148,20 @@ def show_sentence_structure(doc):
     print("-------------------------")
 
 
+def filter_verb_children(children):
+    filtered_children = []
+    for child in children:
+        if child.dep_ == "advcl":
+            continue
+        else:
+            filtered_children.append(child)
+    return filtered_children
+
+
 def get_clause_token_span_for_verb(verb, doc, all_verbs):
     first_token_index = len(doc)
     last_token_index = 0
-    this_verb_children = list(verb.children)
+    this_verb_children = filter_verb_children(list(verb.children))
     for child in this_verb_children:
         if (child not in all_verbs):
             if (child.i < first_token_index):
