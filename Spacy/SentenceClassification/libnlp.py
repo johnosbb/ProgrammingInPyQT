@@ -3,7 +3,8 @@ from pathlib import Path
 from spacy import displacy
 import textacy as tx
 from spacy.matcher import Matcher
-
+import re
+from svgwrite import Drawing, rgb
 
 verb_patterns_for_verb_phrases = [
     [{"POS": "AUX"}, {"POS": "VERB"}, {"POS": "ADP"}],
@@ -190,12 +191,35 @@ def find_other_verbs(doc, root_token):
             other_verbs.append(token)
     return other_verbs
 
+# you may want to add:
+# <rect fill="rgb(255,255,255)" height="100%" width="100%" x="0px" y="0px" />
+# for a white background
+
+
+def render_ent(doc):
+    # Create the HTML markup with colors for different word types
+    html_markup = displacy.render(doc, style="ent", options={"colors": {
+                                  "NOUN": "#ff0000", "VERB": "#00ff00"}})
+    # Create a simple HTML file to display the text with colors
+    file_name = 'ent.html'
+    with open(file_name, "w", encoding="utf-8") as f:
+        f.write(html_markup)
+
 
 def render(doc):
-    svg = displacy.render(doc, style="dep", jupyter=False)
+    svg = displacy.render(doc, style="dep", jupyter=False, options={
+        "bg": "#00ff00", "add_lemma": True, "fine_grained": True, "add_dep": True, "collapse_phrases": True})
     file_name = '-'.join([w.text for w in doc if not w.is_punct]) + ".svg"
     output_path = Path("./" + file_name)
     output_path.open("w", encoding="utf-8").write(svg)
+    # Open an existing SVG file
+    drawing = Drawing(filename=output_path)
+
+    # # Do something with the drawing, e.g., modify or add elements
+    # drawing.add(drawing.rect(insert=("0px", "0px"), size=(
+    #     "100%", "100%"), fill=rgb(255, 255, 255)))
+    # # Save the modified drawing
+    # drawing.saveas(f"w_{output_path}")
 
 
 def get_subject_phrase(doc):

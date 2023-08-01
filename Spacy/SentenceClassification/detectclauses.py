@@ -7,17 +7,25 @@ import libnlp as lnlp
 
 nlp = spacy.load('en_core_web_sm')
 #sentence = "He eats cheese, but he won't try ice cream."
-sentence = "The man walked to work while his wife cycled to the university at the eastern end of the town."
-doc = nlp(sentence)
-# show_sentence_structure(doc)
-lnlp.show_sentence_parts(doc)
-clauses = lnlp.get_clauses(doc)
-print("Clauses")
-for clause in clauses:
-    print(f"clause: {clause}")
+sentences = [
+    "Although it was raining, we decided to go for a walk.",
+    "I will go to the party if I finish my work on time.",
+    "She studied hard because she wanted to pass the exam.",
+    "After he finished his meal, he paid the bill and left.",
+    "While I was reading, the phone rang.",
+    "The man walked to work while his wife cycled to the university at the eastern end of the town."
+]
+for sentence in sentences:
+    doc = nlp(sentence)
+    # show_sentence_structure(doc)
+    lnlp.show_sentence_parts(doc)
+    clauses = lnlp.get_clauses(doc)
+    print("Clauses")
+    for clause in clauses:
+        print(f"clause: {clause}")
 
 
-# Ancestors and depenencies
+# Ancestors and dependencies
 # Consider the following example sentence:
 # In this sentence, the word "eats" is the main verb, and "John" and "apple"
 # are the noun phrases (or tokens) involved in the action.
