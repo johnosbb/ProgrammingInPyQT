@@ -129,6 +129,10 @@ for token in doc:
 ]
 ```
 
+
+## We can add a Custom Entity Ruler based on the json data
+
+
 ```python
 # How to add a custom NER Ruler (based on patterns stored in a json file) to an existing Model to extend NER
 
@@ -165,7 +169,7 @@ def generate_rules(nlp,patterns):
     doc = nlp(text)
     nlp.to_disk("syslog_ner") # save the model for later use
 
-nlp = spacy.load("en_core_web_sm", disable=["tagger","parser","lemmatizer","tok2vec", "tagger"])        
+nlp = spacy.load("en_core_web_sm", disable=["tagger","parser","lemmatizer","tok2vec", "tagger"])        # if we wish we can disable unused components
 patterns = create_training_data("ReferenceFiles/syslog_entities.json","COMPONENT") 
 generate_rules(nlp,patterns)  
 print(nlp.pipe_names) 
