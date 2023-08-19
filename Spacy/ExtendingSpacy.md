@@ -52,7 +52,7 @@ doc = nlp(text)
 nlp.to_disk("./Models/model_with_custom_factory")
 for token in doc:
     print(token.text, token._.is_positive)
-
+```
 
 ## Using the extended Model
 
