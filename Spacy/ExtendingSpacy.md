@@ -79,7 +79,7 @@ Before doing this we can change the name and description in the meta.json file o
 ```json
   "name": "core_web_sm_ex",
   "version": "3.5.0",
-  "description": "English pipeline optimized for CPU with custom factory extension. 
+  "description": "English pipeline optimized for CPU with custom factory extension. ...."
 ```
 We can then run:
 
@@ -95,7 +95,7 @@ pip install en_core_web_sm_ex-3.5.0.tar.gz
 
 ## Using the packaged Model
 
-We can then use the installed model with having to reference the custom factory code directly as an import.
+We can then use the installed model without having to reference the custom factory code directly as an import.
 
 ```python
 
