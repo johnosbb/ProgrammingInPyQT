@@ -102,7 +102,6 @@ We can then use the installed model without having to reference the custom facto
 import spacy
 from spacy.language import Language
 
-#nlp_new = spacy.load("./Models/model_with_custom_factory")
 nlp_new = spacy.load("en_core_web_sm_ex")
 text = "This is a string with good or positive sentiment"
 doc = nlp_new(text)
