@@ -73,8 +73,22 @@ for token in doc:
 
 We can package the model with the custom factory by calling:
 
+
+Before doing this we can change the name and description in the meta.json file of the source model ./Models/model_with_custom_factory
+
+```json
+  "name": "core_web_sm_ex",
+  "version": "3.5.0",
+  "description": "English pipeline optimized for CPU with custom factory extension. 
+```
+We can then run:
+
 ```bash
 python -m spacy package ./Models/model_with_custom_factory ./Models/packages --code sentiment_analyser.py
 ```
 
-This creates a model with the necessary factory that can be pip installed
+This creates a model called core_web_sm_ex with the necessary factory that can be pip installed with 
+
+```bash
+pip install en_core_web_sm_ex-3.5.0.tar.gz
+```
