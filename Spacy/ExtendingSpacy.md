@@ -1,4 +1,4 @@
-# Extending Spacy
+# Extending Spacy with A Custom Factory
 
 ## We define a custom factory in a sepearate file. In this instance sentiment_analyser.py
 
@@ -111,6 +111,64 @@ for token in doc:
 ```
 
 
-# References
+## References
+
+# Extending Spacy with a Custom Entity Ruler
+
+## Define the Rules in a JSON file called syslog_entities.json
+
+
+```json
+[
+    "Status",
+    "Workspace_Management",
+    "client",
+    "OSD",
+    "workspace",
+    "app.py:"
+]
+```
+
+```python
+# How to add a custom NER Ruler (based on patterns stored in a json file) to an existing Model to extend NER
+
+import spacy
+import json
+import os
+from spacy.pipeline import EntityRuler
+
+
+# format of Spacy yTraining Data
+# TRAIN_DATA = [(text, {"entities": [(start,end,label)]})]
+
+def save_data(file,data):
+    with open(file, "w", encoding="utf-8") as f:
+        json.dump(data,f, indent=4)
+
+def load_data(file):
+    with open(file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return (data)  
+
+def create_training_data(file,type):
+    data = load_data(file)
+    patterns = []
+    for item in data:
+        pattern = {"label" : type , "pattern" : item} # this is what spacy expects
+        patterns.append(pattern)
+    return patterns    
+        
+       
+def generate_rules(nlp,patterns):
+    ruler = nlp.add_pipe("entity_ruler")
+    ruler.add_patterns(patterns)
+    doc = nlp(text)
+    nlp.to_disk("syslog_ner") # save the model for later use
+
+nlp = spacy.load("en_core_web_sm", disable=["tagger","parser","lemmatizer","tok2vec", "tagger"])        
+patterns = create_training_data("ReferenceFiles/syslog_entities.json","COMPONENT") 
+generate_rules(nlp,patterns)  
+print(nlp.pipe_names) 
+```
 
 - [Spacy Serialization Records](https://spacy.io/usage/saving-loading#serialization-methods)
