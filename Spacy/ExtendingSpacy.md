@@ -71,6 +71,10 @@ for token in doc:
 
 ## Packaging the Model
 
+We can package the model with the custom factory by calling:
+
 ```bash
 python -m spacy package ./Models/model_with_custom_factory ./Models/packages --code sentiment_analyser.py
 ```
+
+This creates a model with the necessary factory that can be pip installed
