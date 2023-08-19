@@ -113,6 +113,8 @@ for token in doc:
 
 ## References
 
+- [Spacy Serialization Records](https://spacy.io/usage/saving-loading#serialization-methods)
+
 # Extending Spacy with a Custom Entity Ruler
 
 ## Define the Rules in a JSON file called syslog_entities.json
@@ -166,7 +168,6 @@ def create_training_data(file,type):
 def generate_rules(nlp,patterns):
     ruler = nlp.add_pipe("entity_ruler")
     ruler.add_patterns(patterns)
-    doc = nlp(text)
     nlp.to_disk("syslog_ner") # save the model for later use
 
 nlp = spacy.load("en_core_web_sm", disable=["tagger","parser","lemmatizer","tok2vec", "tagger"])        # if we wish we can disable unused components
@@ -175,4 +176,34 @@ generate_rules(nlp,patterns)
 print(nlp.pipe_names) 
 ```
 
-- [Spacy Serialization Records](https://spacy.io/usage/saving-loading#serialization-methods)
+## Using the Extended Model
+
+We can then use the extended model by loading it in another program
+
+```python
+# How to use the previously extended model
+
+import spacy
+import json
+import os
+from spacy.pipeline import EntityRuler
+
+def test_model(nlp, text):
+    doc = nlp(text)
+    results = []
+    entities = []
+
+    for ent in doc.ents:
+        if(ent.label_ != "CARDINAL"):
+            print(f"text: {ent.text}, label {ent.label_}")
+            results.append(f"text: {ent.text}, label {ent.label_}")
+    return (results)  
+
+nlp = spacy.load("syslog_ner")
+with open("syslog", "r") as f: #read in a file to test our model on
+    text = f.read()
+doc = nlp(text)    
+    
+test_model(nlp, text)
+```
+
