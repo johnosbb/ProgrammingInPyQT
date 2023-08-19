@@ -109,3 +109,8 @@ doc = nlp_new(text)
 for token in doc:
     print(token.text, token._.is_positive)
 ```
+
+
+# References
+
+- [Spacy Serialization Records](https://spacy.io/usage/saving-loading#serialization-methods)
