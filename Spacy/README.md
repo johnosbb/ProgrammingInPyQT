@@ -45,6 +45,9 @@ Constituent tree:
 - Similarly 'sat' is an ancestor of 'on'
 - 'mat' has ancestors 'on' through a direct dependency and sat indirectly via 'on's relationship with 'sat'. 'mat' also has a child 'a'.
 
+## Entending Spacy through Custom Factories and Components
+
+- [Examples](ExtendingSpacy.md)
 
 ## References
 
