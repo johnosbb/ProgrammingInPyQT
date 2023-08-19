@@ -69,4 +69,8 @@ for token in doc:
 ```
 
 
+## Packaging the Model
+
+```bash
+python -m spacy package ./Models/model_with_custom_factory ./Models/packages --code sentiment_analyser.py
 ```
