@@ -92,3 +92,20 @@ This creates a model called core_web_sm_ex with the necessary factory that can b
 ```bash
 pip install en_core_web_sm_ex-3.5.0.tar.gz
 ```
+
+## Using the packaged Model
+
+We can then use the installed model with having to reference the custom factory code directly as an import.
+
+```python
+
+import spacy
+from spacy.language import Language
+
+#nlp_new = spacy.load("./Models/model_with_custom_factory")
+nlp_new = spacy.load("en_core_web_sm_ex")
+text = "This is a string with good or positive sentiment"
+doc = nlp_new(text)
+for token in doc:
+    print(token.text, token._.is_positive)
+```
