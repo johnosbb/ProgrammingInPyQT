@@ -2,6 +2,8 @@ import utilities
 import pickle
 from sklearn import svm
 import pandas as pd
+import numpy as np
+from sklearn.metrics import classification_report
 
 bbc_dataset = "./data/BBC/bbc-text.csv"
 stopwords_file_path = "./data/Stopwords/stopwords.csv"
@@ -56,8 +58,9 @@ def evaluate(clf, X_test, y_test, le):
 
 
 def test_new_example(input_string, clf, vectorizer, le):
-    vector = vectorizer.transform([input_string]).todense()
-    prediction = clf.predict(vector)
+    denseMatrix = vectorizer.transform([input_string]).todense()
+    denseMatrixAsArray = np.asarray(vector)
+    prediction = clf.predict(denseMatrixAsArray)
     print(prediction)
     label = le.inverse_transform(prediction)
     print(label)
@@ -76,13 +79,18 @@ def main():
     y_train.to_json(y_df_path)
     #tfidf_vectorizer, tfidf_matrix = utilities.create_tfid_vectorizer_and_matrix(X_train, stopwords)
     tfidf_vectorizer = utilities.create_tfid_vectorizer(X_train, stopwords)
-    X_train_tfidf_matrix = tfidf_vectorizer.transform(X_train).todense()
-    X_test_tfidf_matrix = tfidf_vectorizer.transform(X_test).todense()
-    utilities.show_vector_matrix(tfidf_vectorizer, X_train_tfidf_matrix)
-    clf = utilities.train_svm_classifier(X_train, y_train)
-    pickle.dump(clf, open("Chapter04/bbc_svm.pkl", "wb"))
-    #clf = pickle.load(open("Chapter04/bbc_svm.pkl", "rb"))
-    evaluate(clf, X_test, y_test, le)
+    X_train_tfidf_sparse_matrix = tfidf_vectorizer.transform(X_train)
+    X_test_tfidf_sparse_matrix = tfidf_vectorizer.transform(X_test)
+    X_train_tfidf_dense_matrix = X_train_tfidf_sparse_matrix.todense()
+    X_test_tfidf_dense_matrix = X_test_tfidf_sparse_matrix.todense()
+    # Convert the NumPy matrix to a NumPy array
+    denseTrainMatrix = np.asarray(X_train_tfidf_dense_matrix)
+    denseTestMatrix = np.asarray(X_test_tfidf_dense_matrix)
+    utilities.show_vector_matrix(
+        tfidf_vectorizer, X_train_tfidf_sparse_matrix)
+    clf = utilities.train_svm_classifier(denseTrainMatrix, y_train)
+    pickle.dump(clf, open("data/BBC/bbc_svm.pkl", "wb"))
+    evaluate(clf, denseTestMatrix, y_test, le)
     test_new_example(new_example, clf, tfidf_vectorizer, le)
 
 
