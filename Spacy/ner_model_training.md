@@ -1,4 +1,4 @@
-# Train Spacy 3.0 for Entity Recognition
+# Training Spacy 3.0 for Entity Recognition
 
 ## Generating Training Data
 
