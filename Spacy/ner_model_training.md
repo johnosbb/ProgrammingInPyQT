@@ -230,6 +230,9 @@ db.to_disk("./data/Syslog/train.spacy")  # save the docbin object
 
 ```
 
+
+## Generating a Config File for the Model
+
 Generate a base_config.cfg file using this link [Config Generator](https://spacy.io/usage/training#config)
 
 Create a custom config file based on the base config by running the following command.
@@ -246,4 +249,40 @@ config.cfg
 You can now add your data and train your pipeline:
 python -m spacy train config.cfg --paths.train ./train.spacy --paths.dev ./dev.spacy
 
+```
+
+## Train the Model
+
+
+```bash
+python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./train.spacy 
+ℹ Saving to output directory: output
+ℹ Using CPU
+
+=========================== Initializing pipeline ===========================
+[2023-08-26 14:15:44,947] [INFO] Set up nlp object from config
+[2023-08-26 14:15:44,966] [INFO] Pipeline: ['tok2vec', 'ner']
+[2023-08-26 14:15:44,971] [INFO] Created vocabulary
+[2023-08-26 14:15:44,980] [INFO] Finished initializing nlp object
+[2023-08-26 14:15:45,229] [INFO] Initialized pipeline components: ['tok2vec', 'ner']
+✔ Initialized pipeline
+
+============================= Training pipeline =============================
+ℹ Pipeline: ['tok2vec', 'ner']
+ℹ Initial learn rate: 0.001
+E    #       LOSS TOK2VEC  LOSS NER  ENTS_F  ENTS_P  ENTS_R  SCORE 
+---  ------  ------------  --------  ------  ------  ------  ------
+  0       0          0.00     49.45    0.00    0.00    0.00    0.00
+ 32     200       2096.24   3005.62   82.35   80.77   84.00    0.82
+ 72     400       8897.19   2514.65   90.20   88.46   92.00    0.90
+122     600      17885.16   4397.02   92.00   92.00   92.00    0.92
+186     800       8564.16   2969.25   88.00   88.00   88.00    0.88
+257    1000      31317.78   5540.93   88.00   88.00   88.00    0.88
+357    1200      31496.34   8778.02   88.00   88.00   88.00    0.88
+457    1400      20830.71   5129.60   88.00   88.00   88.00    0.88
+585    1600      73978.23   9807.69   92.00   92.00   92.00    0.92
+785    1800      67894.53  11027.76   92.00   92.00   92.00    0.92
+985    2000      57954.77   9316.73   92.00   92.00   92.00    0.92
+1185    2200      49331.61   8892.55   88.00   88.00   88.00    0.88
+✔ Saved pipeline to output directory
 ```
