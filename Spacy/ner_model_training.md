@@ -251,7 +251,7 @@ python -m spacy train config.cfg --paths.train ./train.spacy --paths.dev ./dev.s
 
 ```
 
-## Train the Model
+## Training the Model
 
 
 ```bash
@@ -285,4 +285,17 @@ E    #       LOSS TOK2VEC  LOSS NER  ENTS_F  ENTS_P  ENTS_R  SCORE
 985    2000      57954.77   9316.73   92.00   92.00   92.00    0.92
 1185    2200      49331.61   8892.55   88.00   88.00   88.00    0.88
 ✔ Saved pipeline to output directory
+```
+
+## Using the Model
+
+```python
+def evaluate():
+    nlp1 = spacy.load("./data/Syslog/output/model-best")  # load the best model
+    with open(TEXT_PATH, 'r') as file: # read some text to evaluate
+        text = file.read()
+    doc = nlp1(text)  # create a doc object
+    for ent in doc.ents:
+        print(ent.text, ent.start_char, ent.end_char, ent.label_)
+
 ```
