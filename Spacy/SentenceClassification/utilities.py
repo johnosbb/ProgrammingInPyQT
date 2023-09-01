@@ -2,6 +2,7 @@ import time
 import nltk
 import spacy
 import string
+import Levenshtein
 import csv
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.dummy import DummyClassifier
@@ -24,6 +25,8 @@ import re
 import math
 from sklearn import preprocessing
 from sklearn import svm
+from spacy.tokens import DocBin
+from tqdm import tqdm
 
 tokenizer = nltk.data.load("tokenizers/punkt/english.pickle")
 nlp = spacy.load("en_core_web_sm")
@@ -310,7 +313,7 @@ def create_tfid_vectorizer_and_matrix(sentences, stopword_list):
 
 def create_tfid_vectorizer(data, stopword_list):
     tfidf_vectorizer = TfidfVectorizer(max_df=0.90, min_df=0.05, stop_words=stopword_list,
-                          use_idf=True, tokenizer=tokenize_and_stem, ngram_range=(1,3))
+                                       use_idf=True, tokenizer=tokenize_and_stem, ngram_range=(1, 3))
     tfidf_vectorizer.fit(data)
     return tfidf_vectorizer
 
@@ -328,50 +331,60 @@ def make_predictions(test_data, vectorizer, km):
             predicted_data[topic][prediction].append(text)
     return predicted_data
 
+
 def clean_text(text):
     for segment in text:
         # print (segment)
         segment = segment.strip()
-        segment = segment.replace("\n", " ") # remove line breaks
-        #print(segment)
+        segment = segment.replace("\n", " ")  # remove line breaks
+        # print(segment)
 
-        punctuation = '''!()-[]{};:'"\,<>./?@#$%^&*_~''' # punctuation
+        punctuation = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''  # punctuation
         for ele in segment:
             if ele in punctuation:
-                segment = segment.replace(ele, "") # remove  punctuation replacing with an empty string
+                # remove  punctuation replacing with an empty string
+                segment = segment.replace(ele, "")
         # print (segment)
         words = segment.split()
 
 # create a vectorizer of the most popular  words in each category of the dictionary provided
 # the dictionary has the structure "topic" : list of strings with each string containing a text article
+
+
 def create_vectorizers_dictionary_of_most_common_words(data_dict, stopwords):
     topic_list = list(data_dict.keys())
     vectorizer_dict = {}
     for topic in topic_list:
-        text_array = data_dict[topic] # a list of the articles for a given topic
-        text = " ".join(text_array) # concatanate all articles into one big string
-        word_list = tokenize_nltk(text) # tokenize the string
-        word_list = [word for word in word_list if word not in stopwords] # exclude stopwords
-        freq_dist = FreqDist(word_list) 
-        top_200 = freq_dist.most_common(200) # the most frequently occurring words for that topic.
+        # a list of the articles for a given topic
+        text_array = data_dict[topic]
+        # concatanate all articles into one big string
+        text = " ".join(text_array)
+        word_list = tokenize_nltk(text)  # tokenize the string
+        # exclude stopwords
+        word_list = [word for word in word_list if word not in stopwords]
+        freq_dist = FreqDist(word_list)
+        # the most frequently occurring words for that topic.
+        top_200 = freq_dist.most_common(200)
         vocab = [wtuple[0] for wtuple in top_200 if wtuple[0]
                  not in stopwords and wtuple[0] not in string.punctuation]
-        vectorizer_dict[topic] = CountVectorizer(vocabulary=vocab) # Convert a collection of text documents to a matrix of token counts.
+        # Convert a collection of text documents to a matrix of token counts.
+        vectorizer_dict[topic] = CountVectorizer(vocabulary=vocab)
     return vectorizer_dict
 
 
-def get_most_frequent_words(text,stopwords,number_of_words):
+def get_most_frequent_words(text, stopwords, number_of_words):
     word_list = tokenize_nltk(text)
-    word_list = [word for word in word_list if word not in stopwords and word not in string.punctuation and re.search('[a-zA-Z]', word)]
+    word_list = [word for word in word_list if word not in stopwords and word not in string.punctuation and re.search(
+        '[a-zA-Z]', word)]
     freq_dist = FreqDist(word_list)
     top_n = freq_dist.most_common(number_of_words)
     top_n = [word[0] for word in top_n]
     return top_n
 
-def show_count_vector_features(count_vector):    
+
+def show_count_vector_features(count_vector):
     print(count_vector.get_feature_names())
-    
-    
+
 
 def get_labels(names):
     # class in scikit-learn is used for encoding categorical labels into numeric representations.
@@ -404,6 +417,7 @@ def get_w2vec_sentence_vector(word_vectors):
 
 # Split data into two sets, one for training and one for testing
 
+
 def split_test_train(data, train_percent):
     train_test_border = math.ceil(train_percent*len(data))
     train_data = data[0:train_test_border]
@@ -416,10 +430,12 @@ def divide_data_using_dictionary_keys(data_dict):
     test_dict = {}
     for topic in data_dict.keys():
         text_list = data_dict[topic]
-        x_train, x_test = train_test_split(text_list, test_size=0.2) # Split arrays or matrices into random train and test subsets.
+        # Split arrays or matrices into random train and test subsets.
+        x_train, x_test = train_test_split(text_list, test_size=0.2)
         train_dict[topic] = x_train
         test_dict[topic] = x_test
     return (train_dict, test_dict)
+
 
 def transform_vectorizing_dictionary(text, vect_dict, le):
     number_topics = len(list(vect_dict.keys()))
@@ -440,7 +456,8 @@ def create_dataset_from_dictionary(data_dict, le, vectorizer_dict):
     for topic in data_dict.keys():
         for text in data_dict[topic]:
             gold_labels.append(le.transform([topic]))
-            text_vector = transform_vectorizing_dictionary(text, vectorizer_dict, le)
+            text_vector = transform_vectorizing_dictionary(
+                text, vectorizer_dict, le)
             data_matrix.append(text_vector)
     X = np.array(data_matrix)
     y = np.array(gold_labels)
@@ -455,7 +472,7 @@ def create_dataset_as_pandas_frame(data_dict, le):
         text = text + data_dict[topic]
         this_topic_labels = [label[0]]*len(data_dict[topic])
         labels = labels + this_topic_labels
-    docs = {'text':text, 'label':labels}
+    docs = {'text': text, 'label': labels}
     frame = pd.DataFrame(docs)
     return frame
 
@@ -465,13 +482,17 @@ def create_dataset_as_pandas_frame(data_dict, le):
 # y_train: This variable contains the training data for the target variable (also known as the dependent variable or labels). It is a subset of the original DataFrame's gold_column_name column, corresponding to the data used in X_train.
 # y_test: This variable contains the testing data for the target variable. Similar to X_test, it is a subset of the original DataFrame's gold_column_name column, corresponding to the data used in X_test. The model's predictions on this data will be compared to the actual labels (y_test) to evaluate its performance.
 def split_pandas_frame_dataset(df, train_column_name, gold_column_name, test_percent):
-    X_train, X_test, y_train, y_test = train_test_split(df[train_column_name], df[gold_column_name], test_size=test_percent, random_state=0)
+    X_train, X_test, y_train, y_test = train_test_split(
+        df[train_column_name], df[gold_column_name], test_size=test_percent, random_state=0)
     return (X_train, X_test, y_train, y_test)
 
+
 def classify_vector(vector):
-    result = np.where(vector == np.amax(vector))  # np.where returns elements chosen from x or y depending on condition. amax returns the maximum of an array or maximum along an axis
+    # np.where returns elements chosen from x or y depending on condition. amax returns the maximum of an array or maximum along an axis
+    result = np.where(vector == np.amax(vector))
     label = result[0][0]
     return [label]
+
 
 def train_svm_classifier(X_train, y_train):
     clf = svm.SVC(C=1, kernel='linear')
@@ -479,6 +500,8 @@ def train_svm_classifier(X_train, y_train):
     return clf
 
 # We read in a cvs file of stopwords and then stem them returning a stemmed list.
+
+
 def get_stemmed_stopwords_from_cvs(path):
     stopwords = read_in_csv(path)
     stopwords = [word[0] for word in stopwords]
@@ -534,4 +557,130 @@ def get_cvs_data_as_dictionary(filename):
         data_dict[category].append(text)
     return data_dict
 
- 
+
+# Get items from a dataframe
+# Assumes DF has a column called "Job Description"
+def get_items_from_dataframe(df, regex, column_name, target_column_name):
+    df[column_name] = df[target_column_name].apply(
+        lambda x: re.findall(regex, x))
+    return df
+
+
+# Get a list of items from a dataframe
+def get_list_of_items_from_dataframe(df, column_name):
+    items = []
+    for index, row in df.iterrows():
+        if (len(row[column_name]) > 0):
+            for item in list(row[column_name]):
+                if (type(item) is tuple and len(item) > 1):
+                    item = item[0]
+                if (item not in items):
+                    items.append(item)
+    return items
+
+
+# Get a list of emails from a dataframe
+# Assumes DF has a column called "Job Description"
+def get_emails_from_dataframe(df, target_column_name):
+    original_email_regex = '[\S]+@[a-zA-Z0-9\.]+\.[a-zA-Z]+'
+    email_regex = '[^\s:|()\']+@[a-zA-Z0-9\.]+\.[a-zA-Z]+'
+    df['emails'] = df[target_column_name].apply(
+        lambda x: re.findall(email_regex, x))
+    emails = get_list_of_items_from_dataframe(df, 'emails')
+    return emails
+
+# Get a list of urls from a dataframe
+
+
+def get_urls_from_dataframe(df, target_column_name):
+    url_regex = '(http[s]?://(www\.)?[A-Za-z0-9–_\.\-]+\.[A-Za-z]+/?[A-Za-z0-9$\–_\-\/\.]*)[\.)\"]*'
+    df = get_items_from_dataframe(df, url_regex, 'urls', target_column_name)
+    urls = get_list_of_items_from_dataframe(df, 'urls')
+    return urls
+
+
+# The Levenshtein distance, also known as the edit distance,
+# is a metric used to measure the similarity or dissimilarity between two strings or sequences.
+# It quantifies the minimum number of single-character edits (insertions, deletions, or substitutions)
+# required to transform one string into another.
+# In the context of similarity, a lower Levenshtein distance implies greater similarity between the two strings.
+
+# How it works:
+# Insertion: Adding a character to one of the strings.
+# Example: "kitten" and "kittens" have a Levenshtein distance of 1 because you need to insert an 's' to make them the same.
+# Deletion: Removing a character from one of the strings.
+# Example: "flaw" and "law" have a Levenshtein distance of 1 because you need to delete the 'f' from the first string to make them the same.
+# Substitution: Replacing a character in one of the strings with another character.
+# Example: "cat" and "hat" have a Levenshtein distance of 1 because you need to substitute 'c' with 'h' to make them the same.
+# The Levenshtein distance can be useful in various applications, including spell-checking, DNA sequence alignment, and natural language processing. It provides a way to quantify how different two strings are, which is often used to determine the similarity or dissimilarity between words or phrases in a text analysis context. The smaller the Levenshtein distance between two strings, the more similar they are considered to be.
+# .apply(lambda x: Levenshtein.distance(input_string, x)):
+# This is using the apply method to apply a lambda function to each element (x) in the 'emails' column.
+# The lambda function calculates the Levenshtein distance between input_string (the string you want to compare against)
+# and each element x (an email address from the 'emails' column).
+
+
+def find_levenshtein_dataframe(input_string, df, column_name):
+    df['distance_to_' + input_string] = df[column_name].apply(
+        lambda x: Levenshtein.distance(input_string, x))
+    return df
+
+
+def find_jaro_dataframe(input_string, df, column_name):
+    df['distance_to_' + input_string] = df[column_name].apply(
+        lambda x: Levenshtein.jaro(input_string, x))
+    return df
+
+# add an ner component to a spacy model
+
+
+# returns an ner pipline, creating it if it does not exist
+def add_ner_to_model(nlp):
+    if "ner" not in nlp.pipe_names:
+        ner = nlp.create_pipe("ner")
+        nlp.add_pipe(ner, last=True)
+    else:
+        ner = nlp.get_pipe("ner")
+    return (nlp, ner)
+
+
+# expects data in spacy training format
+#             "<referenced text>",
+#             {
+#                 "entities": [
+#                     [
+#                         35,
+#                         55,
+#                         "<LABEL_NAME>"
+#                     ]
+#                 ]
+#             }
+def add_labels_to_ner_model(ner, data):
+    for sentence, annotations in data:
+        for ent in annotations.get("entities"):
+            ner.add_label(ent[2])  # label is the 3rd field of entities
+    return ner
+
+
+def convert_ner_data_to_spacy_format(data_path, target_directory, use_blank_model=True):
+    if(use_blank_model):
+        nlp = spacy.blank("en")  # load a new blank spacy model
+    else:
+        nlp = spacy.load("en_core_web_sm")  # load default web model
+    db = DocBin()  # create a DocBin object
+    with open(data_path, 'r') as f:
+        data = json.load(f)
+    train_data = data['annotations']
+    train_data = [tuple(i) for i in train_data]
+    for text, annot in tqdm(train_data):  # data in previous format
+        doc = nlp.make_doc(text)  # create doc object from text
+        ents = []
+        for start, end, label in annot["entities"]:  # add character indexes
+            span = doc.char_span(start, end, label=label,
+                                 alignment_mode="contract")
+            if span is None:
+                print("Skipping entity")
+            else:
+                ents.append(span)
+        doc.ents = ents  # label the text with the ents
+        db.add(doc)
+    db.to_disk(target_directory)  # save the docbin object
