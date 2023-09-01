@@ -1,4 +1,4 @@
-# Extending Spacy with A Custom Factory
+# Extending Spacy with A Custom Factory and Custom Attributes
 
 ## We define a custom factory in a sepearate file. In this instance sentiment_analyser.py
 
