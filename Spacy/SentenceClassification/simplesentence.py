@@ -15,9 +15,33 @@ def show_sentence_structure(doc):
 def is_imperative_mood(doc):
     matcher = Matcher(nlp.vocab)
     pattern = [
-        {"LOWER": "let"}, {"POS": "PRON", "LOWER": {"IN": ["us", "'s"]}}
+        {"LOWER": "let"}, {"POS": "PRON",
+                           "LOWER": {"IN": ["us", "'s", "them"]}}
     ]
     matcher.add("IMPERATIVE_MOOD", [pattern], greedy='LONGEST')
+    matches = matcher(doc)
+    matches.sort(key=lambda x: x[1])
+    # print(len(matches))
+    # for match in matches[:10]:
+    #     print(f"match found = {doc[match[1]:match[2]]}")
+    if(len(matches) > 0):
+        return True
+    else:
+        return False
+
+
+def is_optative_mood(doc):
+    matcher = Matcher(nlp.vocab)
+
+    pattern = [
+        {"LOWER": {"IN": ["let", "wish"]}},
+        {"LOWER": {"IN": ["there", "you"]}},
+        {"LOWER": "be"},
+        {"POS": {"IN": ["NOUN", "ADJ"]}, "OP": "*"},
+        {"LOWER": "on", "OP": "?"},
+        {"LOWER": "earth", "POS": "NOUN", "OP": "?"}
+    ]
+    matcher.add("OPTATIVE_MOOD", [pattern], greedy='LONGEST')
     matches = matcher(doc)
     matches.sort(key=lambda x: x[1])
     # print(len(matches))
@@ -36,9 +60,10 @@ def is_imperative_form(doc):
     for token in doc:
         if token.dep_ == 'nsubj' and not imperative_mood:
             num_subjects += 1
+        # Is the verb in its base form or the verb is (Verb, Present Tense, Non-3rd Person Singular)
         if (token.pos_ == "VERB" or token.pos_ == "AUX") and token.dep_ == "ROOT" and token.tag_ in ["VB", "VBP"]:
-            is_imperative = True
-    return is_imperative and (num_subjects == 0)
+            has_correct_verb_form = True
+    return ((has_correct_verb_form and (num_subjects == 0)), {"number of subjects": num_subjects, "has_correct_verb_form": has_correct_verb_form})
 
 
 def is_single_word_utterance(doc):
@@ -54,6 +79,7 @@ def is_simple_sentence(doc):
     # Count the number of subjects and predicates
     num_subjects = 0
     num_predicates = 0
+    # if the sentence consists of two tokens and the second token is a punctuation.
     if(len(doc) == 2 and doc[1].pos_ == "PUNCT"):
         print(
             f"{sentence}\n")
@@ -62,11 +88,13 @@ def is_simple_sentence(doc):
 
     else:
         for token in doc:
-            # In spaCy, the dependency label "nsubj" stands for "nominal subject." It is used to represent the grammatical relationship between a verb and its subject. The "nsubj" dependency label is assigned to the noun phrase or pronoun that acts as the subject of a verb.
+            # In spaCy, the dependency label "nsubj" stands for "nominal subject." It is used to represent the grammatical relationship between a verb and its subject.
+            # The "nsubj" dependency label is assigned to the noun phrase or pronoun that acts as the subject of a verb.
             if token.dep_ == 'nsubj':
                 num_subjects += 1
             elif token.dep_ == 'ROOT' and token.pos_ == 'VERB':
-                # The predicate is the part of the sentence that contains the verb and any objects or modifiers associated with the verb. It provides information about the subject and what it is doing or what is happening to it.
+                # The predicate is the part of the sentence that contains the verb and any objects or modifiers associated with the verb.
+                # It provides information about the subject and what it is doing or what is happening to it.
                 num_predicates += 1
         result = num_subjects == 1 and num_predicates == 1
 
@@ -75,18 +103,31 @@ def is_simple_sentence(doc):
 
 
 sentences = [
-    "Let us wash our clothes",
-    "Let them wash our clothes",
-    "Let's wash our clothes",
-    "So, clean your room!",
-    "John, clean your room",
-    "Then clean your room",
-    "Please let me know if you have any questions.",
-    "Let’s not forget to book a hotel room.",
-    "Be quiet",
-    "Don't run",
-    "Do not do that"
+    "Let there be peace on Earth."
 ]
+
+
+# sentences = [
+#     "Let them wash our clothes",
+#     "Give them the keys.",
+#     "Let me know if you need help.",
+#     "Let there be peace on Earth."
+# ]
+
+
+# sentences = [
+#     "Let us wash our clothes",
+#     "Let them wash our clothes",
+#     "Let's wash our clothes",
+#     "So, clean your room!",
+#     "John, clean your room",
+#     "Then clean your room",
+#     "Please let me know if you have any questions.",
+#     "Let’s not forget to book a hotel room.",
+#     "Be quiet",
+#     "Don't run",
+#     "Do not do that"
+# ]
 # sentences = ["The cat is sleeping.", "John and Sarah went to the park.",
 #              "Excellent!",
 #              "Fuck you!",
@@ -111,12 +152,17 @@ for sentence in sentences:
     print(
         f"Target Sentence: {sentence}\n")
     show_sentence_structure(doc)
-    if(is_imperative_form(doc)):
+    (is_imperative, reasons) = is_imperative_form(doc)
+    if(is_imperative):
         print("This is the imperative\n")
-    elif (is_simple_sentence(doc)):
+        for key, value in reasons.items():
+            print(f"Reason {key} : {value}")
+    if (is_simple_sentence(doc)):
         print("This is a simple sentence\n")
-    elif(is_single_word_utterance(doc)):
+    if(is_single_word_utterance(doc)):
         print("This is a single word utterance\n")
-    else:
-        print("Could not identify the sentence type\n")
+    if(is_optative_mood(doc)):
+        print("This is the optative\n")
+    # else:
+    #     print("Could not identify the sentence type\n")
     print("-----------------\n")

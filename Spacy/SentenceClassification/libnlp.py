@@ -50,7 +50,9 @@ def get_verb_phrases_textacy(doc):
 def get_verb_phrases(nlp, doc):
     verb_phrase_pattern = [
         {"POS": {"IN": ["VERB", "AUX"]}},
+        # ?	Make the pattern optional, by allowing it to match 0 or 1 times.
         {"POS": {"IN": ["VERB", "AUX"]}, "OP": "?"},
+        # *	Allow the pattern to match 0 or more times.
         {"POS": {"IN": ["ADV", "PART", "ADP"]}, "OP": "*"}
     ]
     matcher = Matcher(nlp.vocab)
